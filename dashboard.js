@@ -92,7 +92,7 @@ function drawMap(filteredData) {
       countries.push(d.country);
       values.push(val);
       hover.push(
-        `<b>${d.country}</b><br>${d.region}<br>Gender gap: ${val}`
+        `<b>${d.region}</b><br>Gender gap: ${val}`
       );
     }
   });
@@ -103,6 +103,7 @@ function drawMap(filteredData) {
     locationmode: "country names",
     z: values,
     colorscale: "Cividis",
+    text: hover,
     zmid: 0,
     hovertemplate: "%{text}<extra></extra>"
   };
