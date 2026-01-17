@@ -21,9 +21,9 @@
       text-align: center;
       margin-bottom: 20px;
     }
-    #chart {
-      max-width: 900px;
-      margin: auto;
+    #chart, #map {
+      max-width: 1000px;
+      margin: 40px auto;
     }
   </style>
 </head>
@@ -57,6 +57,7 @@
 </div>
 
 <div id="chart"></div>
+<div id="map"></div>
 
 <script>
 const yearSlider = document.getElementById("year");
@@ -67,59 +68,6 @@ let selectedRegion = null;
 
 function renderChart(year) {
 
-  let encoding;
-
-  if (selectedRegion === null) {
-    // ALL REGIONS VIEW
-    encoding = {
-      "x": {
-        "field": "region",
-        "type": "nominal",
-        "title": "World Bank Region",
-        "axis": { "labelAngle": -40 }
-      },
-      "y": {
-        "field": "gender_gap",
-        "type": "quantitative",
-        "title": "Gender gap (female − male)"
-      },
-      "color": {
-        "field": "region",
-        "type": "nominal",
-        "legend": null
-      }
-    };
-  } else {
-    // BRUSHED REGION VIEW
-    encoding = {
-      "x": {
-        "field": "region",
-        "type": "nominal",
-        "title": "World Bank Region",
-        "axis": { "labelAngle": -40 }
-      },
-      "y": {
-        "field": "gender_gap",
-        "type": "quantitative",
-        "title": "Gender gap (female − male)"
-      },
-      "color": {
-        "condition": {
-          "test": `datum.region == '${selectedRegion}'`,
-          "value": "#1f77b4"
-        },
-        "value": "#d3d3d3"
-      },
-      "opacity": {
-        "condition": {
-          "test": `datum.region == '${selectedRegion}'`,
-          "value": 1
-        },
-        "value": 0.3
-      }
-    };
-  }
-
   const spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": { "url": "data.json" },
@@ -128,29 +76,92 @@ function renderChart(year) {
       { "filter": `datum.level == '${selectedLevel}'` }
     ],
     "mark": "bar",
-    "encoding": encoding
+    "encoding": {
+      "x": {
+        "field": "region",
+        "type": "nominal",
+        "axis": { "labelAngle": -40 }
+      },
+      "y": {
+        "field": "gender_gap",
+        "type": "quantitative"
+      },
+      "color": selectedRegion
+        ? {
+            "condition": {
+              "test": `datum.region == '${selectedRegion}'`,
+              "value": "#1f77b4"
+            },
+            "value": "#d3d3d3"
+          }
+        : {
+            "field": "region",
+            "type": "nominal",
+            "legend": null
+          },
+      "opacity": selectedRegion
+        ? {
+            "condition": {
+              "test": `datum.region == '${selectedRegion}'`,
+              "value": 1
+            },
+            "value": 0.3
+          }
+        : { "value": 1 }
+    }
   };
 
   vegaEmbed("#chart", spec, { actions: false });
 }
 
+function renderMap(year) {
+
+  const spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+      "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
+      "format": { "type": "topojson", "feature": "countries" }
+    },
+
+    "mark": {
+      "type": "geoshape",
+      "stroke": "white"
+    },
+
+    "projection": { "type": "equalEarth" },
+
+    "encoding": {
+      "color": selectedRegion
+        ? { "value": "#1f77b4" }
+        : { "value": "#cfcfcf" }
+    }
+  };
+
+  vegaEmbed("#map", spec, { actions: false });
+}
+
 yearSlider.addEventListener("input", () => {
   yearValue.textContent = yearSlider.value;
   renderChart(yearSlider.value);
+  renderMap(yearSlider.value);
 });
 
 function setLevel(level) {
   selectedLevel = level;
   renderChart(yearSlider.value);
+  renderMap(yearSlider.value);
 }
 
 function setRegion(region) {
   selectedRegion = region;
   renderChart(yearSlider.value);
+  renderMap(yearSlider.value);
 }
 
 // initial render
 renderChart(2020);
+renderMap(2020);
 </script>
 
 </body>
