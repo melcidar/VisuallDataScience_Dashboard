@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gender Gaps in Education per World Bank Regions</title>
+  <title>Gender Gaps – World Map</title>
 
-  <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
   <style>
@@ -17,13 +15,9 @@
     h1 {
       text-align: center;
     }
-    .controls {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    #chart, #map {
-      max-width: 1000px;
-      margin: 40px auto;
+    #vis {
+      max-width: 1100px;
+      margin: auto;
     }
   </style>
 </head>
@@ -31,195 +25,106 @@
 <body>
 
 <h1>Gender Gaps in Education per World Bank Regions</h1>
-
-<div class="controls">
-  <label for="year">Year:</label>
-  <input type="range" id="year" min="1999" max="2020" value="2020">
-  <span id="yearValue">2020</span>
-</div>
-
-<div class="controls">
-  <button onclick="setLevel('primary')">Primary</button>
-  <button onclick="setLevel('lower_secondary')">Lower Secondary</button>
-  <button onclick="setLevel('upper_secondary')">Upper Secondary</button>
-  <button onclick="setLevel('tertiary')">Tertiary</button>
-</div>
-
-<div class="controls">
-  <button onclick="setRegion(null)">All regions</button>
-  <button onclick="setRegion('Europe and Central Asia (WB)')">Europe & Central Asia</button>
-  <button onclick="setRegion('East Asia and Pacific (WB)')">East Asia & Pacific</button>
-  <button onclick="setRegion('Latin America and Caribbean (WB)')">Latin America & Caribbean</button>
-  <button onclick="setRegion('Middle East and North Africa (WB)')">MENA</button>
-  <button onclick="setRegion('North America (WB)')">North America</button>
-  <button onclick="setRegion('South Asia (WB)')">South Asia</button>
-  <button onclick="setRegion('Sub-Saharan Africa (WB)')">Sub-Saharan Africa</button>
-</div>
-
-<div id="chart"></div>
-<div id="map"></div>
+<div id="vis"></div>
 
 <script>
-const yearSlider = document.getElementById("year");
-const yearValue = document.getElementById("yearValue");
+const spec = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 1000,
+  "height": 520,
 
-let selectedLevel = "primary";
-let selectedRegion = null;
+  "signals": [
+    { "name": "year", "value": 2020 },
+    { "name": "level", "value": "primary" }
+  ],
 
-/* ================= BAR CHART ================= */
-
-function renderChart(year) {
-
-  const spec = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "data.json" },
-    "transform": [
-      { "filter": `datum.year == ${year}` },
-      { "filter": `datum.level == '${selectedLevel}'` }
-    ],
-    "mark": "bar",
-    "encoding": {
-      "x": {
-        "field": "region",
-        "type": "nominal",
-        "axis": { "labelAngle": -40 },
-        "title": "World Bank Region"
-      },
-      "y": {
-        "field": "gender_gap",
-        "type": "quantitative",
-        "title": "Gender gap (female − male)"
-      },
-      "color": selectedRegion
-        ? {
-            "condition": {
-              "test": `datum.region == '${selectedRegion}'`,
-              "value": "#1f77b4"
-            },
-            "value": "#d3d3d3"
-          }
-        : {
-            "field": "region",
-            "type": "nominal",
-            "legend": null
-          },
-      "opacity": selectedRegion
-        ? {
-            "condition": {
-              "test": `datum.region == '${selectedRegion}'`,
-              "value": 1
-            },
-            "value": 0.3
-          }
-        : { "value": 1 }
-    }
-  };
-
-  vegaEmbed("#chart", spec, { actions: false });
-}
-
-/* ================= WORLD MAP ================= */
-
-function renderMap(year) {
-
-  const spec = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-    "data": {
+  "data": [
+    {
+      "name": "world",
       "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
       "format": { "type": "topojson", "feature": "countries" }
     },
 
-    "transform": [
-      /* normalize country name */
-      {
-        "calculate": "replace(datum.properties.name, 'United States of America', 'United States')",
-        "as": "country"
-      },
+    {
+      "name": "wb_regions",
+      "url": "country_to_wb_region_array.json"
+    },
 
-      /* country -> WB region */
-      {
-        "lookup": "country",
-        "from": {
-          "data": { "url": "country_to_wb_region_array.json" },
-          "key": "country",
-          "fields": ["region"]
+    {
+      "name": "education",
+      "url": "data.json",
+      "transform": [
+        { "type": "filter", "expr": "datum.year == year && datum.level == level" },
+        {
+          "type": "aggregate",
+          "groupby": ["region"],
+          "fields": ["gender_gap"],
+          "ops": ["mean"],
+          "as": ["gender_gap"]
         }
-      },
-
-      /* attach ALL education rows */
-      {
-        "lookup": "region",
-        "from": {
-          "data": { "url": "data.json" },
-          "key": "region",
-          "fields": ["gender_gap", "year", "level"]
-        }
-      },
-
-      /* filters */
-      { "filter": `datum.year == ${year}` },
-      { "filter": `datum.level == '${selectedLevel}'` },
-
-      /* aggregate per region */
-      {
-        "aggregate": [
-          { "op": "mean", "field": "gender_gap", "as": "gender_gap" }
-        ],
-        "groupby": ["region", "properties.name"]
-      }
-    ],
-
-    "projection": { "type": "equalEarth" },
-
-    "mark": { "type": "geoshape", "stroke": "white" },
-
-    "encoding": {
-      "color": {
-        "field": "gender_gap",
-        "type": "quantitative",
-        "scale": {
-          "scheme": "redblue",
-          "reverse": true
-        },
-        "title": "Gender gap (female − male)"
-      },
-      "tooltip": [
-        { "field": "properties.name", "title": "Country" },
-        { "field": "region", "title": "WB Region" },
-        { "field": "gender_gap", "title": "Gender gap", "format": ".2f" }
       ]
     }
-  };
+  ],
 
-  vegaEmbed("#map", spec, { actions: false });
-}
+  "projections": [
+    {
+      "name": "proj",
+      "type": "equalEarth"
+    }
+  ],
 
+  "scales": [
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": { "data": "education", "field": "gender_gap" },
+      "range": { "scheme": "redblue" },
+      "reverse": true
+    }
+  ],
 
-/* ================= INTERACTION ================= */
+  "marks": [
+    {
+      "type": "shape",
+      "from": { "data": "world" },
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "replace(datum.properties.name, 'United States of America', 'United States')",
+          "as": "country"
+        },
+        {
+          "type": "lookup",
+          "from": "wb_regions",
+          "key": "country",
+          "fields": ["country"],
+          "values": ["region"]
+        },
+        {
+          "type": "lookup",
+          "from": "education",
+          "key": "region",
+          "fields": ["region"],
+          "values": ["gender_gap"]
+        }
+      ],
+      "encode": {
+        "enter": {
+          "fill": { "scale": "color", "field": "gender_gap" },
+          "stroke": { "value": "white" },
+          "strokeWidth": { "value": 0.5 }
+        },
+        "update": {
+          "tooltip": {
+            "signal": "{'Country': datum.country, 'Region': datum.region, 'Gender gap': datum.gender_gap}"
+          }
+        }
+      }
+    }
+  ]
+};
 
-yearSlider.addEventListener("input", () => {
-  yearValue.textContent = yearSlider.value;
-  renderChart(yearSlider.value);
-  renderMap(yearSlider.value);
-});
-
-function setLevel(level) {
-  selectedLevel = level;
-  renderChart(yearSlider.value);
-  renderMap(yearSlider.value);
-}
-
-function setRegion(region) {
-  selectedRegion = region;
-  renderChart(yearSlider.value);
-  renderMap(yearSlider.value);
-}
-
-/* ================= INITIAL RENDER ================= */
-
-renderChart(2020);
-renderMap(2020);
+vegaEmbed("#vis", spec, { actions: false });
 </script>
 
 </body>
