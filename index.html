@@ -90,15 +90,10 @@ const spec = {
     "projection": "proj",
     "transform": [
       {
-        "type": "formula",
-        "expr": "replace(datum.properties.name, 'United States of America', 'United States')",
-        "as": "country"
-      },
-      {
         "type": "lookup",
         "from": "wb_regions",
-        "key": "country",
-        "fields": ["country"],
+        "key": "id",
+        "fields": ["id"],
         "values": ["region"]
       },
       {
@@ -117,7 +112,7 @@ const spec = {
       },
       "update": {
         "tooltip": {
-          "signal": "{'Country': datum.country, 'Region': datum.region, 'Gender gap': datum.gender_gap}"
+          "signal": "{'Region': datum.region, 'Gender gap': datum.gender_gap}"
         }
       }
     }
