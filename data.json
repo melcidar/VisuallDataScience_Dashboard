@@ -1,0 +1,3998 @@
+[
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 1999,
+    "level": "primary",
+    "gender_gap": -1.421
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2000,
+    "level": "primary",
+    "gender_gap": -1.508
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2001,
+    "level": "primary",
+    "gender_gap": -1.529
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2002,
+    "level": "primary",
+    "gender_gap": -1.489
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2003,
+    "level": "primary",
+    "gender_gap": -1.159
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2004,
+    "level": "primary",
+    "gender_gap": -1.175
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2005,
+    "level": "primary",
+    "gender_gap": -1.103
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2006,
+    "level": "primary",
+    "gender_gap": -1.587
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2007,
+    "level": "primary",
+    "gender_gap": -1.562
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2008,
+    "level": "primary",
+    "gender_gap": -1.404
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2009,
+    "level": "primary",
+    "gender_gap": -1.459
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2010,
+    "level": "primary",
+    "gender_gap": -1.381
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2011,
+    "level": "primary",
+    "gender_gap": -1.294
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2012,
+    "level": "primary",
+    "gender_gap": -0.904
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2013,
+    "level": "primary",
+    "gender_gap": -1.087
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2014,
+    "level": "primary",
+    "gender_gap": -0.615
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2015,
+    "level": "primary",
+    "gender_gap": 0.193
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2016,
+    "level": "primary",
+    "gender_gap": 0.581
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2017,
+    "level": "primary",
+    "gender_gap": 0.557
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2018,
+    "level": "primary",
+    "gender_gap": 1.17
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2019,
+    "level": "primary",
+    "gender_gap": 1.133
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2020,
+    "level": "primary",
+    "gender_gap": 1.157
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2021,
+    "level": "primary",
+    "gender_gap": 1.105
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2022,
+    "level": "primary",
+    "gender_gap": 0.988
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 1999,
+    "level": "primary",
+    "gender_gap": 1.09
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2000,
+    "level": "primary",
+    "gender_gap": 1.325
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2001,
+    "level": "primary",
+    "gender_gap": 0.943
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2002,
+    "level": "primary",
+    "gender_gap": 0.467
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2003,
+    "level": "primary",
+    "gender_gap": 0.477
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2004,
+    "level": "primary",
+    "gender_gap": 0.597
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2005,
+    "level": "primary",
+    "gender_gap": 0.378
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2006,
+    "level": "primary",
+    "gender_gap": 0.266
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2007,
+    "level": "primary",
+    "gender_gap": 0.152
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2008,
+    "level": "primary",
+    "gender_gap": 0.258
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2009,
+    "level": "primary",
+    "gender_gap": 0.08
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2010,
+    "level": "primary",
+    "gender_gap": 0.034
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2011,
+    "level": "primary",
+    "gender_gap": -0.027
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2012,
+    "level": "primary",
+    "gender_gap": -0.114
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2013,
+    "level": "primary",
+    "gender_gap": -0.076
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2014,
+    "level": "primary",
+    "gender_gap": -0.145
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2015,
+    "level": "primary",
+    "gender_gap": -0.15
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2016,
+    "level": "primary",
+    "gender_gap": -0.142
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2017,
+    "level": "primary",
+    "gender_gap": -0.043
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2018,
+    "level": "primary",
+    "gender_gap": -0.076
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2019,
+    "level": "primary",
+    "gender_gap": -0.09
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2020,
+    "level": "primary",
+    "gender_gap": -0.155
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2021,
+    "level": "primary",
+    "gender_gap": -0.158
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2022,
+    "level": "primary",
+    "gender_gap": -0.176
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 1999,
+    "level": "primary",
+    "gender_gap": 0.167
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2000,
+    "level": "primary",
+    "gender_gap": 0.423
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2001,
+    "level": "primary",
+    "gender_gap": 0.929
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2002,
+    "level": "primary",
+    "gender_gap": 0.984
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2003,
+    "level": "primary",
+    "gender_gap": 0.125
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2004,
+    "level": "primary",
+    "gender_gap": -0.103
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2005,
+    "level": "primary",
+    "gender_gap": -0.126
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2006,
+    "level": "primary",
+    "gender_gap": -0.193
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2007,
+    "level": "primary",
+    "gender_gap": -0.197
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2008,
+    "level": "primary",
+    "gender_gap": -0.269
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2009,
+    "level": "primary",
+    "gender_gap": -0.257
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2010,
+    "level": "primary",
+    "gender_gap": -0.45
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2011,
+    "level": "primary",
+    "gender_gap": -0.553
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2012,
+    "level": "primary",
+    "gender_gap": -0.261
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2013,
+    "level": "primary",
+    "gender_gap": -0.04
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2014,
+    "level": "primary",
+    "gender_gap": -0.131
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2015,
+    "level": "primary",
+    "gender_gap": -0.358
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2016,
+    "level": "primary",
+    "gender_gap": -0.452
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2017,
+    "level": "primary",
+    "gender_gap": -0.685
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2018,
+    "level": "primary",
+    "gender_gap": -0.566
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2019,
+    "level": "primary",
+    "gender_gap": -0.496
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2020,
+    "level": "primary",
+    "gender_gap": -0.051
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2021,
+    "level": "primary",
+    "gender_gap": -0.284
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2022,
+    "level": "primary",
+    "gender_gap": -0.61
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 1999,
+    "level": "primary",
+    "gender_gap": 7.188
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2000,
+    "level": "primary",
+    "gender_gap": 6.386
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2001,
+    "level": "primary",
+    "gender_gap": 5.476
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2002,
+    "level": "primary",
+    "gender_gap": 4.687
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2003,
+    "level": "primary",
+    "gender_gap": 4.373
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2004,
+    "level": "primary",
+    "gender_gap": 4.19
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2005,
+    "level": "primary",
+    "gender_gap": 4.1
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2006,
+    "level": "primary",
+    "gender_gap": 4.09
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2007,
+    "level": "primary",
+    "gender_gap": 3.677
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2008,
+    "level": "primary",
+    "gender_gap": 3.501
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2009,
+    "level": "primary",
+    "gender_gap": 3.481
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2010,
+    "level": "primary",
+    "gender_gap": 3.309
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2011,
+    "level": "primary",
+    "gender_gap": 3.288
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2012,
+    "level": "primary",
+    "gender_gap": 3.126
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2013,
+    "level": "primary",
+    "gender_gap": 2.836
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2014,
+    "level": "primary",
+    "gender_gap": 2.724
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2015,
+    "level": "primary",
+    "gender_gap": 2.676
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2016,
+    "level": "primary",
+    "gender_gap": 2.583
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2017,
+    "level": "primary",
+    "gender_gap": 2.61
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2018,
+    "level": "primary",
+    "gender_gap": 2.463
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2019,
+    "level": "primary",
+    "gender_gap": 2.444
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2020,
+    "level": "primary",
+    "gender_gap": 2.427
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2021,
+    "level": "primary",
+    "gender_gap": 2.292
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2022,
+    "level": "primary",
+    "gender_gap": 1.155
+  },
+  {
+    "region": "North America (WB)",
+    "year": 1999,
+    "level": "primary",
+    "gender_gap": 0.068
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2000,
+    "level": "primary",
+    "gender_gap": 0.215
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2001,
+    "level": "primary",
+    "gender_gap": 0.074
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2002,
+    "level": "primary",
+    "gender_gap": -0.09
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2003,
+    "level": "primary",
+    "gender_gap": -0.366
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2004,
+    "level": "primary",
+    "gender_gap": -0.556
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2005,
+    "level": "primary",
+    "gender_gap": -0.584
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2006,
+    "level": "primary",
+    "gender_gap": -1.166
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2007,
+    "level": "primary",
+    "gender_gap": -0.354
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2008,
+    "level": "primary",
+    "gender_gap": 0.091
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2009,
+    "level": "primary",
+    "gender_gap": -1.111
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2010,
+    "level": "primary",
+    "gender_gap": -0.941
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2011,
+    "level": "primary",
+    "gender_gap": -0.658
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2012,
+    "level": "primary",
+    "gender_gap": -0.166
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2013,
+    "level": "primary",
+    "gender_gap": 0.433
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2014,
+    "level": "primary",
+    "gender_gap": -0.556
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2015,
+    "level": "primary",
+    "gender_gap": 0.213
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2016,
+    "level": "primary",
+    "gender_gap": 0.237
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2017,
+    "level": "primary",
+    "gender_gap": 0.235
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2018,
+    "level": "primary",
+    "gender_gap": 0.222
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2019,
+    "level": "primary",
+    "gender_gap": -0.02
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2020,
+    "level": "primary",
+    "gender_gap": 0.157
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2021,
+    "level": "primary",
+    "gender_gap": 0.191
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2022,
+    "level": "primary",
+    "gender_gap": -0.306
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 1999,
+    "level": "primary",
+    "gender_gap": 15.806
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2000,
+    "level": "primary",
+    "gender_gap": 14.406
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2001,
+    "level": "primary",
+    "gender_gap": 13.836
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2002,
+    "level": "primary",
+    "gender_gap": 12.47
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2003,
+    "level": "primary",
+    "gender_gap": 5.426
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2004,
+    "level": "primary",
+    "gender_gap": 6.744
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2005,
+    "level": "primary",
+    "gender_gap": 6.917
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2006,
+    "level": "primary",
+    "gender_gap": 5.62
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2007,
+    "level": "primary",
+    "gender_gap": 3.535
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2008,
+    "level": "primary",
+    "gender_gap": 2.552
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2009,
+    "level": "primary",
+    "gender_gap": 0.571
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2010,
+    "level": "primary",
+    "gender_gap": 0.831
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2011,
+    "level": "primary",
+    "gender_gap": 0.293
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2012,
+    "level": "primary",
+    "gender_gap": 1.933
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2013,
+    "level": "primary",
+    "gender_gap": 1.727
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2014,
+    "level": "primary",
+    "gender_gap": 2.768
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2015,
+    "level": "primary",
+    "gender_gap": 2.534
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2016,
+    "level": "primary",
+    "gender_gap": 2.648
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2017,
+    "level": "primary",
+    "gender_gap": 2.392
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2018,
+    "level": "primary",
+    "gender_gap": 3.235
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2019,
+    "level": "primary",
+    "gender_gap": 2.859
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2020,
+    "level": "primary",
+    "gender_gap": 1.734
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2021,
+    "level": "primary",
+    "gender_gap": 2.095
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2022,
+    "level": "primary",
+    "gender_gap": 2.588
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 1999,
+    "level": "primary",
+    "gender_gap": 6.883
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2000,
+    "level": "primary",
+    "gender_gap": 7.027
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2001,
+    "level": "primary",
+    "gender_gap": 6.949
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2002,
+    "level": "primary",
+    "gender_gap": 7.191
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2003,
+    "level": "primary",
+    "gender_gap": 6.735
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2004,
+    "level": "primary",
+    "gender_gap": 6.28
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2005,
+    "level": "primary",
+    "gender_gap": 6.18
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2006,
+    "level": "primary",
+    "gender_gap": 5.65
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2007,
+    "level": "primary",
+    "gender_gap": 6.879
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2008,
+    "level": "primary",
+    "gender_gap": 6.085
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2009,
+    "level": "primary",
+    "gender_gap": 5.881
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2010,
+    "level": "primary",
+    "gender_gap": 5.543
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2011,
+    "level": "primary",
+    "gender_gap": 5.472
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2012,
+    "level": "primary",
+    "gender_gap": 4.69
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2013,
+    "level": "primary",
+    "gender_gap": 4.723
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2014,
+    "level": "primary",
+    "gender_gap": 4.518
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2015,
+    "level": "primary",
+    "gender_gap": 4.719
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2016,
+    "level": "primary",
+    "gender_gap": 4.649
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2017,
+    "level": "primary",
+    "gender_gap": 4.91
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2018,
+    "level": "primary",
+    "gender_gap": 5.261
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2019,
+    "level": "primary",
+    "gender_gap": 4.95
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2020,
+    "level": "primary",
+    "gender_gap": 4.771
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2021,
+    "level": "primary",
+    "gender_gap": 4.964
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 1999,
+    "level": "lower_secondary",
+    "gender_gap": -1.34
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2000,
+    "level": "lower_secondary",
+    "gender_gap": -1.603
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2001,
+    "level": "lower_secondary",
+    "gender_gap": -1.316
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2002,
+    "level": "lower_secondary",
+    "gender_gap": -1.527
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2003,
+    "level": "lower_secondary",
+    "gender_gap": -1.945
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2004,
+    "level": "lower_secondary",
+    "gender_gap": -2.097
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2005,
+    "level": "lower_secondary",
+    "gender_gap": -1.806
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2006,
+    "level": "lower_secondary",
+    "gender_gap": -1.635
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2007,
+    "level": "lower_secondary",
+    "gender_gap": -1.296
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2008,
+    "level": "lower_secondary",
+    "gender_gap": -1.007
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2009,
+    "level": "lower_secondary",
+    "gender_gap": -1.16
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2010,
+    "level": "lower_secondary",
+    "gender_gap": -1.347
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2011,
+    "level": "lower_secondary",
+    "gender_gap": -1.529
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2012,
+    "level": "lower_secondary",
+    "gender_gap": -1.798
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2013,
+    "level": "lower_secondary",
+    "gender_gap": -1.64
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2014,
+    "level": "lower_secondary",
+    "gender_gap": -1.911
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2015,
+    "level": "lower_secondary",
+    "gender_gap": -1.345
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2016,
+    "level": "lower_secondary",
+    "gender_gap": -1.488
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2017,
+    "level": "lower_secondary",
+    "gender_gap": -1.727
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2018,
+    "level": "lower_secondary",
+    "gender_gap": -1.376
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2019,
+    "level": "lower_secondary",
+    "gender_gap": -1.47
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2020,
+    "level": "lower_secondary",
+    "gender_gap": -0.939
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2021,
+    "level": "lower_secondary",
+    "gender_gap": -0.837
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2022,
+    "level": "lower_secondary",
+    "gender_gap": -0.858
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 1999,
+    "level": "lower_secondary",
+    "gender_gap": 0.77
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2000,
+    "level": "lower_secondary",
+    "gender_gap": 0.683
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2001,
+    "level": "lower_secondary",
+    "gender_gap": 0.383
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2002,
+    "level": "lower_secondary",
+    "gender_gap": 0.501
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2003,
+    "level": "lower_secondary",
+    "gender_gap": 0.399
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2004,
+    "level": "lower_secondary",
+    "gender_gap": 0.565
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2005,
+    "level": "lower_secondary",
+    "gender_gap": 0.565
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2006,
+    "level": "lower_secondary",
+    "gender_gap": 0.91
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2007,
+    "level": "lower_secondary",
+    "gender_gap": 0.623
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2008,
+    "level": "lower_secondary",
+    "gender_gap": 0.427
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2009,
+    "level": "lower_secondary",
+    "gender_gap": 0.43
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2010,
+    "level": "lower_secondary",
+    "gender_gap": 0.421
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2011,
+    "level": "lower_secondary",
+    "gender_gap": 0.07
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2012,
+    "level": "lower_secondary",
+    "gender_gap": -0.11
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2013,
+    "level": "lower_secondary",
+    "gender_gap": -0.155
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2014,
+    "level": "lower_secondary",
+    "gender_gap": -0.216
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2015,
+    "level": "lower_secondary",
+    "gender_gap": -0.358
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2016,
+    "level": "lower_secondary",
+    "gender_gap": -0.503
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2017,
+    "level": "lower_secondary",
+    "gender_gap": -0.322
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2018,
+    "level": "lower_secondary",
+    "gender_gap": -0.333
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2019,
+    "level": "lower_secondary",
+    "gender_gap": -0.206
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2020,
+    "level": "lower_secondary",
+    "gender_gap": -0.095
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2021,
+    "level": "lower_secondary",
+    "gender_gap": 0.055
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2022,
+    "level": "lower_secondary",
+    "gender_gap": 0.248
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 1999,
+    "level": "lower_secondary",
+    "gender_gap": 1.025
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2000,
+    "level": "lower_secondary",
+    "gender_gap": 0.778
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2001,
+    "level": "lower_secondary",
+    "gender_gap": 0.605
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2002,
+    "level": "lower_secondary",
+    "gender_gap": 0.494
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2003,
+    "level": "lower_secondary",
+    "gender_gap": 0.332
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2004,
+    "level": "lower_secondary",
+    "gender_gap": 0.168
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2005,
+    "level": "lower_secondary",
+    "gender_gap": 0.111
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2006,
+    "level": "lower_secondary",
+    "gender_gap": -0.151
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2007,
+    "level": "lower_secondary",
+    "gender_gap": -0.321
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2008,
+    "level": "lower_secondary",
+    "gender_gap": -0.303
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2009,
+    "level": "lower_secondary",
+    "gender_gap": -0.263
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2010,
+    "level": "lower_secondary",
+    "gender_gap": -0.074
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2011,
+    "level": "lower_secondary",
+    "gender_gap": 0.123
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2012,
+    "level": "lower_secondary",
+    "gender_gap": 0.42
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2013,
+    "level": "lower_secondary",
+    "gender_gap": -0.78
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2014,
+    "level": "lower_secondary",
+    "gender_gap": -0.482
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2015,
+    "level": "lower_secondary",
+    "gender_gap": -0.455
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2016,
+    "level": "lower_secondary",
+    "gender_gap": -0.459
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2017,
+    "level": "lower_secondary",
+    "gender_gap": -0.654
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2018,
+    "level": "lower_secondary",
+    "gender_gap": -0.476
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2019,
+    "level": "lower_secondary",
+    "gender_gap": -1.201
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2020,
+    "level": "lower_secondary",
+    "gender_gap": -1.463
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2021,
+    "level": "lower_secondary",
+    "gender_gap": -1.109
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2022,
+    "level": "lower_secondary",
+    "gender_gap": -1.815
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 1999,
+    "level": "lower_secondary",
+    "gender_gap": 9.73
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2000,
+    "level": "lower_secondary",
+    "gender_gap": 9.737
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2001,
+    "level": "lower_secondary",
+    "gender_gap": 9.123
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2002,
+    "level": "lower_secondary",
+    "gender_gap": 8.33
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2003,
+    "level": "lower_secondary",
+    "gender_gap": 7.428
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2004,
+    "level": "lower_secondary",
+    "gender_gap": 7.416
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2005,
+    "level": "lower_secondary",
+    "gender_gap": 6.979
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2006,
+    "level": "lower_secondary",
+    "gender_gap": 6.229
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2007,
+    "level": "lower_secondary",
+    "gender_gap": 6.1
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2008,
+    "level": "lower_secondary",
+    "gender_gap": 5.835
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2009,
+    "level": "lower_secondary",
+    "gender_gap": 5.335
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2010,
+    "level": "lower_secondary",
+    "gender_gap": 4.403
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2011,
+    "level": "lower_secondary",
+    "gender_gap": 3.717
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2012,
+    "level": "lower_secondary",
+    "gender_gap": 3.097
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2013,
+    "level": "lower_secondary",
+    "gender_gap": 3.413
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2014,
+    "level": "lower_secondary",
+    "gender_gap": 3.96
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2015,
+    "level": "lower_secondary",
+    "gender_gap": 4.104
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2016,
+    "level": "lower_secondary",
+    "gender_gap": 4.039
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2017,
+    "level": "lower_secondary",
+    "gender_gap": 3.905
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2018,
+    "level": "lower_secondary",
+    "gender_gap": 3.845
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2019,
+    "level": "lower_secondary",
+    "gender_gap": 3.722
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2020,
+    "level": "lower_secondary",
+    "gender_gap": 3.544
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2021,
+    "level": "lower_secondary",
+    "gender_gap": 3.524
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2022,
+    "level": "lower_secondary",
+    "gender_gap": 3.368
+  },
+  {
+    "region": "North America (WB)",
+    "year": 1999,
+    "level": "lower_secondary",
+    "gender_gap": -5.316
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2000,
+    "level": "lower_secondary",
+    "gender_gap": -2.374
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2001,
+    "level": "lower_secondary",
+    "gender_gap": -1.567
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2002,
+    "level": "lower_secondary",
+    "gender_gap": -0.752
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2003,
+    "level": "lower_secondary",
+    "gender_gap": -1.775
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2004,
+    "level": "lower_secondary",
+    "gender_gap": -3.111
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2005,
+    "level": "lower_secondary",
+    "gender_gap": -0.083
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2006,
+    "level": "lower_secondary",
+    "gender_gap": 0.743
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2007,
+    "level": "lower_secondary",
+    "gender_gap": -0.067
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2008,
+    "level": "lower_secondary",
+    "gender_gap": -1.808
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2009,
+    "level": "lower_secondary",
+    "gender_gap": 0.427
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2010,
+    "level": "lower_secondary",
+    "gender_gap": 0.742
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2011,
+    "level": "lower_secondary",
+    "gender_gap": 0.754
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2012,
+    "level": "lower_secondary",
+    "gender_gap": 0.401
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2013,
+    "level": "lower_secondary",
+    "gender_gap": -0.174
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2014,
+    "level": "lower_secondary",
+    "gender_gap": -1.389
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2015,
+    "level": "lower_secondary",
+    "gender_gap": -0.654
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2016,
+    "level": "lower_secondary",
+    "gender_gap": -0.292
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2017,
+    "level": "lower_secondary",
+    "gender_gap": -0.23
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2018,
+    "level": "lower_secondary",
+    "gender_gap": -0.402
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2019,
+    "level": "lower_secondary",
+    "gender_gap": -0.67
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2020,
+    "level": "lower_secondary",
+    "gender_gap": -0.28
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2021,
+    "level": "lower_secondary",
+    "gender_gap": -2.04
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2022,
+    "level": "lower_secondary",
+    "gender_gap": -0.751
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 1999,
+    "level": "lower_secondary",
+    "gender_gap": 13.699
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2000,
+    "level": "lower_secondary",
+    "gender_gap": 13.454
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2001,
+    "level": "lower_secondary",
+    "gender_gap": 11.413
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2002,
+    "level": "lower_secondary",
+    "gender_gap": 9.806
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2003,
+    "level": "lower_secondary",
+    "gender_gap": 7.212
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2004,
+    "level": "lower_secondary",
+    "gender_gap": 6.455
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2005,
+    "level": "lower_secondary",
+    "gender_gap": 6.305
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2006,
+    "level": "lower_secondary",
+    "gender_gap": 5.641
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2007,
+    "level": "lower_secondary",
+    "gender_gap": 5.452
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2008,
+    "level": "lower_secondary",
+    "gender_gap": 3.982
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2009,
+    "level": "lower_secondary",
+    "gender_gap": 3.173
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2010,
+    "level": "lower_secondary",
+    "gender_gap": 1.736
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2011,
+    "level": "lower_secondary",
+    "gender_gap": 0.483
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2012,
+    "level": "lower_secondary",
+    "gender_gap": -0.983
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2013,
+    "level": "lower_secondary",
+    "gender_gap": -2.869
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2014,
+    "level": "lower_secondary",
+    "gender_gap": -3.056
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2015,
+    "level": "lower_secondary",
+    "gender_gap": -2.25
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2016,
+    "level": "lower_secondary",
+    "gender_gap": -2.279
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2017,
+    "level": "lower_secondary",
+    "gender_gap": -2.186
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2018,
+    "level": "lower_secondary",
+    "gender_gap": -1.34
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2019,
+    "level": "lower_secondary",
+    "gender_gap": -1.164
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2020,
+    "level": "lower_secondary",
+    "gender_gap": -1.032
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2021,
+    "level": "lower_secondary",
+    "gender_gap": -0.776
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2022,
+    "level": "lower_secondary",
+    "gender_gap": -0.652
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 1999,
+    "level": "lower_secondary",
+    "gender_gap": 11.808
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2000,
+    "level": "lower_secondary",
+    "gender_gap": 11.402
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2001,
+    "level": "lower_secondary",
+    "gender_gap": 11.016
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2002,
+    "level": "lower_secondary",
+    "gender_gap": 10.875
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2003,
+    "level": "lower_secondary",
+    "gender_gap": 11.067
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2004,
+    "level": "lower_secondary",
+    "gender_gap": 10.546
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2005,
+    "level": "lower_secondary",
+    "gender_gap": 9.705
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2006,
+    "level": "lower_secondary",
+    "gender_gap": 8.638
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2007,
+    "level": "lower_secondary",
+    "gender_gap": 7.678
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2008,
+    "level": "lower_secondary",
+    "gender_gap": 6.836
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2009,
+    "level": "lower_secondary",
+    "gender_gap": 5.861
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2010,
+    "level": "lower_secondary",
+    "gender_gap": 5.522
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2011,
+    "level": "lower_secondary",
+    "gender_gap": 5.158
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2012,
+    "level": "lower_secondary",
+    "gender_gap": 4.81
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2013,
+    "level": "lower_secondary",
+    "gender_gap": 4.606
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2014,
+    "level": "lower_secondary",
+    "gender_gap": 4.236
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2015,
+    "level": "lower_secondary",
+    "gender_gap": 4.267
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2016,
+    "level": "lower_secondary",
+    "gender_gap": 4.315
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2017,
+    "level": "lower_secondary",
+    "gender_gap": 3.747
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2018,
+    "level": "lower_secondary",
+    "gender_gap": 3.155
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2019,
+    "level": "lower_secondary",
+    "gender_gap": 2.871
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2020,
+    "level": "lower_secondary",
+    "gender_gap": 2.896
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 1999,
+    "level": "upper_secondary",
+    "gender_gap": 8.217
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2000,
+    "level": "upper_secondary",
+    "gender_gap": 6.838
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2001,
+    "level": "upper_secondary",
+    "gender_gap": 5.377
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2002,
+    "level": "upper_secondary",
+    "gender_gap": 3.471
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2003,
+    "level": "upper_secondary",
+    "gender_gap": 1.321
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2004,
+    "level": "upper_secondary",
+    "gender_gap": -0.841
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2005,
+    "level": "upper_secondary",
+    "gender_gap": -2.67
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2006,
+    "level": "upper_secondary",
+    "gender_gap": -2.975
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2007,
+    "level": "upper_secondary",
+    "gender_gap": -3.387
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2008,
+    "level": "upper_secondary",
+    "gender_gap": -3.158
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2009,
+    "level": "upper_secondary",
+    "gender_gap": -3.496
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2010,
+    "level": "upper_secondary",
+    "gender_gap": -3.6
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2011,
+    "level": "upper_secondary",
+    "gender_gap": -4.146
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2012,
+    "level": "upper_secondary",
+    "gender_gap": -5.253
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2013,
+    "level": "upper_secondary",
+    "gender_gap": -5.84
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2014,
+    "level": "upper_secondary",
+    "gender_gap": -6.655
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2015,
+    "level": "upper_secondary",
+    "gender_gap": -1.722
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2016,
+    "level": "upper_secondary",
+    "gender_gap": -2.551
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2017,
+    "level": "upper_secondary",
+    "gender_gap": -2.537
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2018,
+    "level": "upper_secondary",
+    "gender_gap": -2.886
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2019,
+    "level": "upper_secondary",
+    "gender_gap": -2.762
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2020,
+    "level": "upper_secondary",
+    "gender_gap": -1.539
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2021,
+    "level": "upper_secondary",
+    "gender_gap": -1.558
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2022,
+    "level": "upper_secondary",
+    "gender_gap": -1.428
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 1999,
+    "level": "upper_secondary",
+    "gender_gap": -0.066
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2000,
+    "level": "upper_secondary",
+    "gender_gap": 0.19
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2001,
+    "level": "upper_secondary",
+    "gender_gap": 0.14
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2002,
+    "level": "upper_secondary",
+    "gender_gap": 0.756
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2003,
+    "level": "upper_secondary",
+    "gender_gap": 0.568
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2004,
+    "level": "upper_secondary",
+    "gender_gap": -0.06
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2005,
+    "level": "upper_secondary",
+    "gender_gap": 0.041
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2006,
+    "level": "upper_secondary",
+    "gender_gap": 0.128
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2007,
+    "level": "upper_secondary",
+    "gender_gap": 0.1
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2008,
+    "level": "upper_secondary",
+    "gender_gap": -0.012
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2009,
+    "level": "upper_secondary",
+    "gender_gap": -0.083
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2010,
+    "level": "upper_secondary",
+    "gender_gap": 0.186
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2011,
+    "level": "upper_secondary",
+    "gender_gap": 0.322
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2012,
+    "level": "upper_secondary",
+    "gender_gap": 0.111
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2013,
+    "level": "upper_secondary",
+    "gender_gap": 0.102
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2014,
+    "level": "upper_secondary",
+    "gender_gap": -0.101
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2015,
+    "level": "upper_secondary",
+    "gender_gap": -0.168
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2016,
+    "level": "upper_secondary",
+    "gender_gap": -0.498
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2017,
+    "level": "upper_secondary",
+    "gender_gap": 0.001
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2018,
+    "level": "upper_secondary",
+    "gender_gap": -0.462
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2019,
+    "level": "upper_secondary",
+    "gender_gap": -0.436
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2020,
+    "level": "upper_secondary",
+    "gender_gap": -0.375
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2021,
+    "level": "upper_secondary",
+    "gender_gap": -0.331
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2022,
+    "level": "upper_secondary",
+    "gender_gap": -0.069
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 1999,
+    "level": "upper_secondary",
+    "gender_gap": -3.251
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2000,
+    "level": "upper_secondary",
+    "gender_gap": -3.194
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2001,
+    "level": "upper_secondary",
+    "gender_gap": -3.558
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2002,
+    "level": "upper_secondary",
+    "gender_gap": -3.588
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2003,
+    "level": "upper_secondary",
+    "gender_gap": -3.498
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2004,
+    "level": "upper_secondary",
+    "gender_gap": -3.468
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2005,
+    "level": "upper_secondary",
+    "gender_gap": -3.541
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2006,
+    "level": "upper_secondary",
+    "gender_gap": -3.638
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2007,
+    "level": "upper_secondary",
+    "gender_gap": -3.784
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2008,
+    "level": "upper_secondary",
+    "gender_gap": -3.827
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2009,
+    "level": "upper_secondary",
+    "gender_gap": -3.59
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2010,
+    "level": "upper_secondary",
+    "gender_gap": -3.183
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2011,
+    "level": "upper_secondary",
+    "gender_gap": -3.002
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2012,
+    "level": "upper_secondary",
+    "gender_gap": -2.93
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2013,
+    "level": "upper_secondary",
+    "gender_gap": -1.207
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2014,
+    "level": "upper_secondary",
+    "gender_gap": -1.878
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2015,
+    "level": "upper_secondary",
+    "gender_gap": -1.628
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2016,
+    "level": "upper_secondary",
+    "gender_gap": -1.605
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2017,
+    "level": "upper_secondary",
+    "gender_gap": -1.389
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2018,
+    "level": "upper_secondary",
+    "gender_gap": -1.951
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2019,
+    "level": "upper_secondary",
+    "gender_gap": -1.946
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2020,
+    "level": "upper_secondary",
+    "gender_gap": -2.378
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2021,
+    "level": "upper_secondary",
+    "gender_gap": -3.998
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2022,
+    "level": "upper_secondary",
+    "gender_gap": -3.644
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 1999,
+    "level": "upper_secondary",
+    "gender_gap": 3.958
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2000,
+    "level": "upper_secondary",
+    "gender_gap": 3.608
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2001,
+    "level": "upper_secondary",
+    "gender_gap": 3.669
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2002,
+    "level": "upper_secondary",
+    "gender_gap": 3.616
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2003,
+    "level": "upper_secondary",
+    "gender_gap": 3.572
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2004,
+    "level": "upper_secondary",
+    "gender_gap": 3.904
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2005,
+    "level": "upper_secondary",
+    "gender_gap": 3.932
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2006,
+    "level": "upper_secondary",
+    "gender_gap": 3.786
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2007,
+    "level": "upper_secondary",
+    "gender_gap": 3.296
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2008,
+    "level": "upper_secondary",
+    "gender_gap": 3.154
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2009,
+    "level": "upper_secondary",
+    "gender_gap": 3.459
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2010,
+    "level": "upper_secondary",
+    "gender_gap": 2.758
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2011,
+    "level": "upper_secondary",
+    "gender_gap": 2.97
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2012,
+    "level": "upper_secondary",
+    "gender_gap": 2.107
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2013,
+    "level": "upper_secondary",
+    "gender_gap": 2.957
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2014,
+    "level": "upper_secondary",
+    "gender_gap": 3.193
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2015,
+    "level": "upper_secondary",
+    "gender_gap": 3.377
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2016,
+    "level": "upper_secondary",
+    "gender_gap": 3.31
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2017,
+    "level": "upper_secondary",
+    "gender_gap": 3.383
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2018,
+    "level": "upper_secondary",
+    "gender_gap": 3.213
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2019,
+    "level": "upper_secondary",
+    "gender_gap": 3.101
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2020,
+    "level": "upper_secondary",
+    "gender_gap": 3.112
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2021,
+    "level": "upper_secondary",
+    "gender_gap": 3.208
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2022,
+    "level": "upper_secondary",
+    "gender_gap": 3.145
+  },
+  {
+    "region": "North America (WB)",
+    "year": 1999,
+    "level": "upper_secondary",
+    "gender_gap": 0.672
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2000,
+    "level": "upper_secondary",
+    "gender_gap": 0.548
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2001,
+    "level": "upper_secondary",
+    "gender_gap": 0.261
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2002,
+    "level": "upper_secondary",
+    "gender_gap": -0.068
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2003,
+    "level": "upper_secondary",
+    "gender_gap": 0.218
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2004,
+    "level": "upper_secondary",
+    "gender_gap": 0.306
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2005,
+    "level": "upper_secondary",
+    "gender_gap": -3.22
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2006,
+    "level": "upper_secondary",
+    "gender_gap": -3.947
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2007,
+    "level": "upper_secondary",
+    "gender_gap": -2.326
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2008,
+    "level": "upper_secondary",
+    "gender_gap": -0.738
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2009,
+    "level": "upper_secondary",
+    "gender_gap": -2.159
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2010,
+    "level": "upper_secondary",
+    "gender_gap": -1.817
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2011,
+    "level": "upper_secondary",
+    "gender_gap": -1.47
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2012,
+    "level": "upper_secondary",
+    "gender_gap": -1.094
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2013,
+    "level": "upper_secondary",
+    "gender_gap": -0.767
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2014,
+    "level": "upper_secondary",
+    "gender_gap": -0.932
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2015,
+    "level": "upper_secondary",
+    "gender_gap": -2.067
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2016,
+    "level": "upper_secondary",
+    "gender_gap": 0.124
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2017,
+    "level": "upper_secondary",
+    "gender_gap": -0.14
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2018,
+    "level": "upper_secondary",
+    "gender_gap": -0.153
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2019,
+    "level": "upper_secondary",
+    "gender_gap": 2.228
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2020,
+    "level": "upper_secondary",
+    "gender_gap": 0.387
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2021,
+    "level": "upper_secondary",
+    "gender_gap": -1.28
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2022,
+    "level": "upper_secondary",
+    "gender_gap": -2.577
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 1999,
+    "level": "upper_secondary",
+    "gender_gap": 11.362
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2000,
+    "level": "upper_secondary",
+    "gender_gap": 10.993
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2001,
+    "level": "upper_secondary",
+    "gender_gap": 10.023
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2002,
+    "level": "upper_secondary",
+    "gender_gap": 9.325
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2003,
+    "level": "upper_secondary",
+    "gender_gap": 8.576
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2004,
+    "level": "upper_secondary",
+    "gender_gap": 8.461
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2005,
+    "level": "upper_secondary",
+    "gender_gap": 8.255
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2006,
+    "level": "upper_secondary",
+    "gender_gap": 8.182
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2007,
+    "level": "upper_secondary",
+    "gender_gap": 8.245
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2008,
+    "level": "upper_secondary",
+    "gender_gap": 7.46
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2009,
+    "level": "upper_secondary",
+    "gender_gap": 6.698
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2010,
+    "level": "upper_secondary",
+    "gender_gap": 5.991
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2011,
+    "level": "upper_secondary",
+    "gender_gap": 5.286
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2012,
+    "level": "upper_secondary",
+    "gender_gap": 4.438
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2013,
+    "level": "upper_secondary",
+    "gender_gap": 3.716
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2014,
+    "level": "upper_secondary",
+    "gender_gap": 0.467
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2015,
+    "level": "upper_secondary",
+    "gender_gap": -1.754
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2016,
+    "level": "upper_secondary",
+    "gender_gap": 1.119
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2017,
+    "level": "upper_secondary",
+    "gender_gap": 1.389
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2018,
+    "level": "upper_secondary",
+    "gender_gap": 0.838
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2019,
+    "level": "upper_secondary",
+    "gender_gap": 0.763
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2020,
+    "level": "upper_secondary",
+    "gender_gap": 0.437
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2021,
+    "level": "upper_secondary",
+    "gender_gap": 1.681
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2022,
+    "level": "upper_secondary",
+    "gender_gap": 1.281
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 1999,
+    "level": "upper_secondary",
+    "gender_gap": 9.523
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2000,
+    "level": "upper_secondary",
+    "gender_gap": 9.146
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2001,
+    "level": "upper_secondary",
+    "gender_gap": 9.394
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2002,
+    "level": "upper_secondary",
+    "gender_gap": 9.591
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2003,
+    "level": "upper_secondary",
+    "gender_gap": 8.995
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2004,
+    "level": "upper_secondary",
+    "gender_gap": 8.719
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2005,
+    "level": "upper_secondary",
+    "gender_gap": 8.656
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2006,
+    "level": "upper_secondary",
+    "gender_gap": 8.816
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2007,
+    "level": "upper_secondary",
+    "gender_gap": 8.655
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2008,
+    "level": "upper_secondary",
+    "gender_gap": 8.618
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2009,
+    "level": "upper_secondary",
+    "gender_gap": 8.244
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2010,
+    "level": "upper_secondary",
+    "gender_gap": 7.986
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2011,
+    "level": "upper_secondary",
+    "gender_gap": 7.76
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2012,
+    "level": "upper_secondary",
+    "gender_gap": 7.526
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2013,
+    "level": "upper_secondary",
+    "gender_gap": 7.293
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2014,
+    "level": "upper_secondary",
+    "gender_gap": 7.233
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2015,
+    "level": "upper_secondary",
+    "gender_gap": 6.766
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2016,
+    "level": "upper_secondary",
+    "gender_gap": 5.906
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2017,
+    "level": "upper_secondary",
+    "gender_gap": 5.21
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2018,
+    "level": "upper_secondary",
+    "gender_gap": 5.715
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2019,
+    "level": "upper_secondary",
+    "gender_gap": 5.704
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2020,
+    "level": "upper_secondary",
+    "gender_gap": 5.293
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 1999,
+    "level": "tertiary",
+    "gender_gap": 2.71
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2000,
+    "level": "tertiary",
+    "gender_gap": 2.591
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2001,
+    "level": "tertiary",
+    "gender_gap": 2.929
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2002,
+    "level": "tertiary",
+    "gender_gap": 2.515
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2003,
+    "level": "tertiary",
+    "gender_gap": 2.536
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2004,
+    "level": "tertiary",
+    "gender_gap": 2.1
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2005,
+    "level": "tertiary",
+    "gender_gap": 1.959
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2006,
+    "level": "tertiary",
+    "gender_gap": 1.103
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2007,
+    "level": "tertiary",
+    "gender_gap": 0.104
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2008,
+    "level": "tertiary",
+    "gender_gap": -0.388
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2009,
+    "level": "tertiary",
+    "gender_gap": -0.966
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2010,
+    "level": "tertiary",
+    "gender_gap": -1.453
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2011,
+    "level": "tertiary",
+    "gender_gap": -1.895
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2012,
+    "level": "tertiary",
+    "gender_gap": -2.898
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2013,
+    "level": "tertiary",
+    "gender_gap": -3.864
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2014,
+    "level": "tertiary",
+    "gender_gap": -5.546
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2015,
+    "level": "tertiary",
+    "gender_gap": -6.483
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2016,
+    "level": "tertiary",
+    "gender_gap": -7.616
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2017,
+    "level": "tertiary",
+    "gender_gap": -7.82
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2018,
+    "level": "tertiary",
+    "gender_gap": -8.184
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2019,
+    "level": "tertiary",
+    "gender_gap": -8.818
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2020,
+    "level": "tertiary",
+    "gender_gap": -8.659
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2021,
+    "level": "tertiary",
+    "gender_gap": -8.691
+  },
+  {
+    "region": "East Asia and Pacific (WB)",
+    "year": 2022,
+    "level": "tertiary",
+    "gender_gap": -8.456
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 1999,
+    "level": "tertiary",
+    "gender_gap": -5.587
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2000,
+    "level": "tertiary",
+    "gender_gap": -6.269
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2001,
+    "level": "tertiary",
+    "gender_gap": -7.222
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2002,
+    "level": "tertiary",
+    "gender_gap": -8.776
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2003,
+    "level": "tertiary",
+    "gender_gap": -9.05
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2004,
+    "level": "tertiary",
+    "gender_gap": -10.141
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2005,
+    "level": "tertiary",
+    "gender_gap": -10.75
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2006,
+    "level": "tertiary",
+    "gender_gap": -11.179
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2007,
+    "level": "tertiary",
+    "gender_gap": -11.472
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2008,
+    "level": "tertiary",
+    "gender_gap": -11.986
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2009,
+    "level": "tertiary",
+    "gender_gap": -12.186
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2010,
+    "level": "tertiary",
+    "gender_gap": -12.114
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2011,
+    "level": "tertiary",
+    "gender_gap": -11.987
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2012,
+    "level": "tertiary",
+    "gender_gap": -10.855
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2013,
+    "level": "tertiary",
+    "gender_gap": -10.297
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2014,
+    "level": "tertiary",
+    "gender_gap": -9.648
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2015,
+    "level": "tertiary",
+    "gender_gap": -9.485
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2016,
+    "level": "tertiary",
+    "gender_gap": -9.46
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2017,
+    "level": "tertiary",
+    "gender_gap": -9.699
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2018,
+    "level": "tertiary",
+    "gender_gap": -10.189
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2019,
+    "level": "tertiary",
+    "gender_gap": -11.177
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2020,
+    "level": "tertiary",
+    "gender_gap": -12.022
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2021,
+    "level": "tertiary",
+    "gender_gap": -13.521
+  },
+  {
+    "region": "Europe and Central Asia (WB)",
+    "year": 2022,
+    "level": "tertiary",
+    "gender_gap": -13.607
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 1999,
+    "level": "tertiary",
+    "gender_gap": -3.461
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2000,
+    "level": "tertiary",
+    "gender_gap": -3.886
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2001,
+    "level": "tertiary",
+    "gender_gap": -3.992
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2002,
+    "level": "tertiary",
+    "gender_gap": -4.506
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2003,
+    "level": "tertiary",
+    "gender_gap": -4.99
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2004,
+    "level": "tertiary",
+    "gender_gap": -5.382
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2005,
+    "level": "tertiary",
+    "gender_gap": -5.835
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2006,
+    "level": "tertiary",
+    "gender_gap": -7.225
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2007,
+    "level": "tertiary",
+    "gender_gap": -8.17
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2008,
+    "level": "tertiary",
+    "gender_gap": -8.994
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2009,
+    "level": "tertiary",
+    "gender_gap": -9.98
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2010,
+    "level": "tertiary",
+    "gender_gap": -10.289
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2011,
+    "level": "tertiary",
+    "gender_gap": -10.797
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2012,
+    "level": "tertiary",
+    "gender_gap": -11.248
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2013,
+    "level": "tertiary",
+    "gender_gap": -11.593
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2014,
+    "level": "tertiary",
+    "gender_gap": -12.086
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2015,
+    "level": "tertiary",
+    "gender_gap": -12.256
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2016,
+    "level": "tertiary",
+    "gender_gap": -12.923
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2017,
+    "level": "tertiary",
+    "gender_gap": -13.499
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2018,
+    "level": "tertiary",
+    "gender_gap": -13.985
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2019,
+    "level": "tertiary",
+    "gender_gap": -14.638
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2020,
+    "level": "tertiary",
+    "gender_gap": -16.343
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2021,
+    "level": "tertiary",
+    "gender_gap": -18.446
+  },
+  {
+    "region": "Latin America and Caribbean (WB)",
+    "year": 2022,
+    "level": "tertiary",
+    "gender_gap": -18.188
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 1999,
+    "level": "tertiary",
+    "gender_gap": 2.872
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2000,
+    "level": "tertiary",
+    "gender_gap": 2.278
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2001,
+    "level": "tertiary",
+    "gender_gap": 1.768
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2002,
+    "level": "tertiary",
+    "gender_gap": 1.224
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2003,
+    "level": "tertiary",
+    "gender_gap": 0.245
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2004,
+    "level": "tertiary",
+    "gender_gap": 0.441
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2005,
+    "level": "tertiary",
+    "gender_gap": 0.053
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2006,
+    "level": "tertiary",
+    "gender_gap": -0.789
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2007,
+    "level": "tertiary",
+    "gender_gap": -0.635
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2008,
+    "level": "tertiary",
+    "gender_gap": -2.759
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2009,
+    "level": "tertiary",
+    "gender_gap": -2.266
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2010,
+    "level": "tertiary",
+    "gender_gap": -1.907
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2011,
+    "level": "tertiary",
+    "gender_gap": -2.116
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2012,
+    "level": "tertiary",
+    "gender_gap": -1.979
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2013,
+    "level": "tertiary",
+    "gender_gap": -1.173
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2014,
+    "level": "tertiary",
+    "gender_gap": -1.021
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2015,
+    "level": "tertiary",
+    "gender_gap": -1.157
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2016,
+    "level": "tertiary",
+    "gender_gap": -2.475
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2017,
+    "level": "tertiary",
+    "gender_gap": -2.22
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2018,
+    "level": "tertiary",
+    "gender_gap": -3.49
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2019,
+    "level": "tertiary",
+    "gender_gap": -3.661
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2020,
+    "level": "tertiary",
+    "gender_gap": -3.658
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2021,
+    "level": "tertiary",
+    "gender_gap": -3.193
+  },
+  {
+    "region": "Middle East and North Africa (WB)",
+    "year": 2022,
+    "level": "tertiary",
+    "gender_gap": -3.483
+  },
+  {
+    "region": "North America (WB)",
+    "year": 1999,
+    "level": "tertiary",
+    "gender_gap": -19.303
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2000,
+    "level": "tertiary",
+    "gender_gap": -20.266
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2001,
+    "level": "tertiary",
+    "gender_gap": -21.554
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2002,
+    "level": "tertiary",
+    "gender_gap": -22.984
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2003,
+    "level": "tertiary",
+    "gender_gap": -24.389
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2004,
+    "level": "tertiary",
+    "gender_gap": -25.725
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2005,
+    "level": "tertiary",
+    "gender_gap": -27.418
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2006,
+    "level": "tertiary",
+    "gender_gap": -27.539
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2007,
+    "level": "tertiary",
+    "gender_gap": -27.418
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2008,
+    "level": "tertiary",
+    "gender_gap": -27.163
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2009,
+    "level": "tertiary",
+    "gender_gap": -26.97
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2010,
+    "level": "tertiary",
+    "gender_gap": -26.568
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2011,
+    "level": "tertiary",
+    "gender_gap": -26.517
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2012,
+    "level": "tertiary",
+    "gender_gap": -26.869
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2013,
+    "level": "tertiary",
+    "gender_gap": -27.271
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2014,
+    "level": "tertiary",
+    "gender_gap": -26.642
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2015,
+    "level": "tertiary",
+    "gender_gap": -26.528
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2016,
+    "level": "tertiary",
+    "gender_gap": -25.897
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2017,
+    "level": "tertiary",
+    "gender_gap": -26.634
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2018,
+    "level": "tertiary",
+    "gender_gap": -26.992
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2019,
+    "level": "tertiary",
+    "gender_gap": -27.874
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2020,
+    "level": "tertiary",
+    "gender_gap": -29.434
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2021,
+    "level": "tertiary",
+    "gender_gap": -32.276
+  },
+  {
+    "region": "North America (WB)",
+    "year": 2022,
+    "level": "tertiary",
+    "gender_gap": -32.082
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 1999,
+    "level": "tertiary",
+    "gender_gap": 3.376
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2000,
+    "level": "tertiary",
+    "gender_gap": 3.524
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2001,
+    "level": "tertiary",
+    "gender_gap": 3.339
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2002,
+    "level": "tertiary",
+    "gender_gap": 3.356
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2003,
+    "level": "tertiary",
+    "gender_gap": 3.638
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2004,
+    "level": "tertiary",
+    "gender_gap": 3.798
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2005,
+    "level": "tertiary",
+    "gender_gap": 3.28
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2006,
+    "level": "tertiary",
+    "gender_gap": 3.348
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2007,
+    "level": "tertiary",
+    "gender_gap": 4.085
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2008,
+    "level": "tertiary",
+    "gender_gap": 4.582
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2009,
+    "level": "tertiary",
+    "gender_gap": 4.834
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2010,
+    "level": "tertiary",
+    "gender_gap": 4.868
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2011,
+    "level": "tertiary",
+    "gender_gap": 4.783
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2012,
+    "level": "tertiary",
+    "gender_gap": 3.488
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2013,
+    "level": "tertiary",
+    "gender_gap": 1.909
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2014,
+    "level": "tertiary",
+    "gender_gap": 1.064
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2015,
+    "level": "tertiary",
+    "gender_gap": 1.224
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2016,
+    "level": "tertiary",
+    "gender_gap": 1.108
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2017,
+    "level": "tertiary",
+    "gender_gap": 0.616
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2018,
+    "level": "tertiary",
+    "gender_gap": 0.121
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2019,
+    "level": "tertiary",
+    "gender_gap": -0.802
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2020,
+    "level": "tertiary",
+    "gender_gap": -1.192
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2021,
+    "level": "tertiary",
+    "gender_gap": -0.881
+  },
+  {
+    "region": "South Asia (WB)",
+    "year": 2022,
+    "level": "tertiary",
+    "gender_gap": -0.224
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 1999,
+    "level": "tertiary",
+    "gender_gap": 1.458
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2000,
+    "level": "tertiary",
+    "gender_gap": 1.576
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2001,
+    "level": "tertiary",
+    "gender_gap": 1.74
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2002,
+    "level": "tertiary",
+    "gender_gap": 1.822
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2003,
+    "level": "tertiary",
+    "gender_gap": 2.062
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2004,
+    "level": "tertiary",
+    "gender_gap": 2.069
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2005,
+    "level": "tertiary",
+    "gender_gap": 2.159
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2006,
+    "level": "tertiary",
+    "gender_gap": 2.128
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2007,
+    "level": "tertiary",
+    "gender_gap": 2.188
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2008,
+    "level": "tertiary",
+    "gender_gap": 2.369
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2009,
+    "level": "tertiary",
+    "gender_gap": 2.444
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2010,
+    "level": "tertiary",
+    "gender_gap": 2.643
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2011,
+    "level": "tertiary",
+    "gender_gap": 2.933
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2012,
+    "level": "tertiary",
+    "gender_gap": 2.807
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2013,
+    "level": "tertiary",
+    "gender_gap": 2.821
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2014,
+    "level": "tertiary",
+    "gender_gap": 2.888
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2015,
+    "level": "tertiary",
+    "gender_gap": 2.81
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2016,
+    "level": "tertiary",
+    "gender_gap": 2.68
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2017,
+    "level": "tertiary",
+    "gender_gap": 2.615
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2018,
+    "level": "tertiary",
+    "gender_gap": 2.49
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2019,
+    "level": "tertiary",
+    "gender_gap": 2.354
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2020,
+    "level": "tertiary",
+    "gender_gap": 2.273
+  },
+  {
+    "region": "Sub-Saharan Africa (WB)",
+    "year": 2021,
+    "level": "tertiary",
+    "gender_gap": 2.213
+  }
+]
