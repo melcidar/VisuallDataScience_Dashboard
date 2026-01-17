@@ -19,7 +19,7 @@
     }
     .controls {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     #chart {
       max-width: 900px;
@@ -30,21 +30,22 @@
 
 <body>
 
-  <h1>Gender Gaps in Education per World Bank Regions</h1>
+<h1>Gender Gaps in Education per World Bank Regions</h1>
 
-  <div class="controls">
-    <label for="year">Year:</label>
-    <input type="range" id="year" min="1999" max="2020" value="2020">
-    <span id="yearValue">2020</span>
-  </div>
+<div class="controls">
+  <label for="year">Year:</label>
+  <input type="range" id="year" min="1999" max="2020" value="2020">
+  <span id="yearValue">2020</span>
+</div>
 
-  <div class="controls">
+<div class="controls">
   <button onclick="setLevel('primary')">Primary</button>
   <button onclick="setLevel('lower_secondary')">Lower Secondary</button>
   <button onclick="setLevel('upper_secondary')">Upper Secondary</button>
-  <button onclick="setLevel('tertiary')">Tertiary</button></div>
+  <button onclick="setLevel('tertiary')">Tertiary</button>
+</div>
 
-  <div class="controls">
+<div class="controls">
   <button onclick="setRegion(null)">All regions</button>
   <button onclick="setRegion('Europe and Central Asia (WB)')">Europe & Central Asia</button>
   <button onclick="setRegion('East Asia and Pacific (WB)')">East Asia & Pacific</button>
@@ -53,92 +54,104 @@
   <button onclick="setRegion('North America (WB)')">North America</button>
   <button onclick="setRegion('South Asia (WB)')">South Asia</button>
   <button onclick="setRegion('Sub-Saharan Africa (WB)')">Sub-Saharan Africa</button>
-  </div>
+</div>
 
+<div id="chart"></div>
 
-  <div id="chart"></div>
+<script>
+const yearSlider = document.getElementById("year");
+const yearValue = document.getElementById("yearValue");
 
-  <script>
-    const yearSlider = document.getElementById("year");
-    const yearValue = document.getElementById("yearValue");
+let selectedLevel = "primary";
+let selectedRegion = null;
 
-    function renderChart(year) {
-      const spec = {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "data": { "url": "data.json" },
-    
-      "transform": [
-        { "filter": `datum.year == ${year}` },
-        { "filter": `datum.level == '${selectedLevel}'` }
-      ],
-    
-      "mark": "bar",
-    
-      "encoding": {
-        "x": {
-          "field": "region",
-          "type": "nominal",
-          "title": "World Bank Region",
-          "axis": { "labelAngle": -40 }
-        },
-      
-        "y": {
-          "field": "gender_gap",
-          "type": "quantitative",
-          "title": "Gender gap (female − male)"
-        },
-      
-        ...(selectedRegion
-          ? {
-              "color": {
-                "condition": {
-                  "test": `datum.region == '${selectedRegion}'`,
-                  "value": "#1f77b4"
-                },
-                "value": "#d3d3d3"
-              },
-              "opacity": {
-                "condition": {
-                  "test": `datum.region == '${selectedRegion}'`,
-                  "value": 1
-                },
-                "value": 0.3
-              }
-            }
-          : {
-              "color": {
-                "field": "region",
-                "type": "nominal",
-                "legend": null
-              }
-            })
+function renderChart(year) {
+
+  let encoding;
+
+  if (selectedRegion === null) {
+    // ALL REGIONS VIEW
+    encoding = {
+      "x": {
+        "field": "region",
+        "type": "nominal",
+        "title": "World Bank Region",
+        "axis": { "labelAngle": -40 }
+      },
+      "y": {
+        "field": "gender_gap",
+        "type": "quantitative",
+        "title": "Gender gap (female − male)"
+      },
+      "color": {
+        "field": "region",
+        "type": "nominal",
+        "legend": null
       }
+    };
+  } else {
+    // BRUSHED REGION VIEW
+    encoding = {
+      "x": {
+        "field": "region",
+        "type": "nominal",
+        "title": "World Bank Region",
+        "axis": { "labelAngle": -40 }
+      },
+      "y": {
+        "field": "gender_gap",
+        "type": "quantitative",
+        "title": "Gender gap (female − male)"
+      },
+      "color": {
+        "condition": {
+          "test": `datum.region == '${selectedRegion}'`,
+          "value": "#1f77b4"
+        },
+        "value": "#d3d3d3"
+      },
+      "opacity": {
+        "condition": {
+          "test": `datum.region == '${selectedRegion}'`,
+          "value": 1
+        },
+        "value": 0.3
+      }
+    };
+  }
 
+  const spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": { "url": "data.json" },
+    "transform": [
+      { "filter": `datum.year == ${year}` },
+      { "filter": `datum.level == '${selectedLevel}'` }
+    ],
+    "mark": "bar",
+    "encoding": encoding
+  };
 
-      vegaEmbed("#chart", spec, { actions: false });
-    }
+  vegaEmbed("#chart", spec, { actions: false });
+}
 
-    yearSlider.addEventListener("input", () => {
-      yearValue.textContent = yearSlider.value;
-      renderChart(yearSlider.value);
-    });
+yearSlider.addEventListener("input", () => {
+  yearValue.textContent = yearSlider.value;
+  renderChart(yearSlider.value);
+});
 
-    let selectedLevel = "primary";
-    function setLevel(level) {
-    selectedLevel = level;
-    renderChart(yearSlider.value);
-    }
+function setLevel(level) {
+  selectedLevel = level;
+  renderChart(yearSlider.value);
+}
 
-    let selectedRegion = null;
-    function setRegion(region) {
-    selectedRegion = region;
-    renderChart(yearSlider.value);
-    }
+function setRegion(region) {
+  selectedRegion = region;
+  renderChart(yearSlider.value);
+}
 
-
-    // initial render
-    renderChart(2020);
-  </script>
+// initial render
+renderChart(2020);
+</script>
 
 </body>
 </html>
