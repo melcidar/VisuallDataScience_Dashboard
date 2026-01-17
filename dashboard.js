@@ -102,8 +102,7 @@ function drawMap(filteredData) {
     locations: countries,
     locationmode: "country names",
     z: values,
-    text: hover,
-    colorscale: "RdBu",
+    colorscale: "Cividis",
     zmid: 0,
     hovertemplate: "%{text}<extra></extra>"
   };
