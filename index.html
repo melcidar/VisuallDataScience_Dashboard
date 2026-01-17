@@ -66,6 +66,8 @@ const yearValue = document.getElementById("yearValue");
 let selectedLevel = "primary";
 let selectedRegion = null;
 
+/* ================= BAR CHART ================= */
+
 function renderChart(year) {
 
   const spec = {
@@ -80,11 +82,13 @@ function renderChart(year) {
       "x": {
         "field": "region",
         "type": "nominal",
-        "axis": { "labelAngle": -40 }
+        "axis": { "labelAngle": -40 },
+        "title": "World Bank Region"
       },
       "y": {
         "field": "gender_gap",
-        "type": "quantitative"
+        "type": "quantitative",
+        "title": "Gender gap (female − male)"
       },
       "color": selectedRegion
         ? {
@@ -114,32 +118,88 @@ function renderChart(year) {
   vegaEmbed("#chart", spec, { actions: false });
 }
 
+/* ================= WORLD MAP ================= */
+
 function renderMap(year) {
+
+  const transforms = [
+    /* fix common country naming mismatch */
+    {
+      "calculate": "replace(datum.properties.name, 'United States of America', 'United States')",
+      "as": "country_fixed"
+    },
+
+    /* country -> WB region */
+    {
+      "lookup": "country_fixed",
+      "from": {
+        "data": { "url": "country_to_wb_region.json" },
+        "key": "key",
+        "fields": ["value"]
+      },
+      "as": ["region"]
+    },
+
+    /* region -> gender gap (by year + level) */
+    {
+      "lookup": "region",
+      "from": {
+        "data": { "url": "data.json" },
+        "key": "region",
+        "fields": ["gender_gap", "year", "level"]
+      }
+    },
+
+    { "filter": `datum.year == ${year}` },
+    { "filter": `datum.level == '${selectedLevel}'` }
+  ];
+
+  if (selectedRegion !== null) {
+    transforms.push({ "filter": `datum.region == '${selectedRegion}'` });
+  }
 
   const spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "data": {
       "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
-      "format": { "type": "topojson", "feature": "countries" }
+      "format": {
+        "type": "topojson",
+        "feature": "countries"
+      }
     },
+
+    "transform": transforms,
+
+    "projection": { "type": "equalEarth" },
 
     "mark": {
       "type": "geoshape",
       "stroke": "white"
     },
 
-    "projection": { "type": "equalEarth" },
-
     "encoding": {
-      "color": selectedRegion
-        ? { "value": "#1f77b4" }
-        : { "value": "#cfcfcf" }
+      "color": {
+        "field": "gender_gap",
+        "type": "quantitative",
+        "title": "Gender gap (female − male)",
+        "scale": {
+          "scheme": "redblue",
+          "reverse": true
+        }
+      },
+      "tooltip": [
+        { "field": "properties.name", "title": "Country" },
+        { "field": "region", "title": "WB Region" },
+        { "field": "gender_gap", "title": "Gender gap" }
+      ]
     }
   };
 
   vegaEmbed("#map", spec, { actions: false });
 }
+
+/* ================= INTERACTION ================= */
 
 yearSlider.addEventListener("input", () => {
   yearValue.textContent = yearSlider.value;
@@ -159,7 +219,8 @@ function setRegion(region) {
   renderMap(yearSlider.value);
 }
 
-// initial render
+/* ================= INITIAL RENDER ================= */
+
 renderChart(2020);
 renderMap(2020);
 </script>
