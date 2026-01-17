@@ -9,7 +9,7 @@ let selectedRegion = null;
 // LOAD DATA
 // --------------------------------------------------
 Promise.all([
-  fetch("data_gender_gap.json").then(r => r.json()),
+  fetch("data.json").then(r => r.json()),
   fetch("country_to_wb_region_array.json").then(r => r.json())
 ]).then(([gData, cMap]) => {
   genderData = gData;
