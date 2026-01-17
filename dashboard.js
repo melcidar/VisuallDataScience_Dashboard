@@ -70,7 +70,7 @@ function updateDashboard() {
   );
 
   drawMap(filtered);
-  drawLineChart();
+  drawBarChart();
 }
 
 // --------------------------------------------------
@@ -120,35 +120,43 @@ function drawMap(filteredData) {
     const country = e.points[0].location;
     const region = countryRegionMap.find(d => d.country === country)?.region;
     selectedRegion = region;
-    drawLineChart();
+    drawBarChart();
   });
 }
 
 // --------------------------------------------------
 // LINE CHART
 // --------------------------------------------------
-function drawLineChart() {
+function drawBarChart() {
   if (!selectedRegion) {
-    Plotly.purge("line");
+    Plotly.purge("bar");
     return;
   }
 
-  const data = genderData
-    .filter(d => d.region === selectedRegion && d.level === selectedLevel)
-    .sort((a, b) => a.year - b.year);
+  const data = genderData.filter(d =>
+    d.region === selectedRegion &&
+    d.year === selectedYear
+  );
 
   const trace = {
-    x: data.map(d => d.year),
-    y: data.map(d => d.gender_gap),
-    mode: "lines+markers",
-    name: selectedRegion
+    type: "bar",
+    x: data.map(d => d.gender_gap),
+    y: data.map(d => d.level),
+    orientation: "h",
+    marker: {
+      color: data.map(d => d.gender_gap),
+      colorscale: "RdBu",
+      cmin: -10,
+      cmax: 10
+    }
   };
 
   const layout = {
-    title: `Gender gap over time – ${selectedRegion}`,
-    xaxis: { title: "Year" },
-    yaxis: { title: "Gender gap" }
+    title: `Gender gap – ${selectedRegion}`,
+    xaxis: { title: "Gender gap" },
+    yaxis: { title: "Education level" }
   };
 
-  Plotly.newPlot("line", [trace], layout);
+  Plotly.newPlot("bar", [trace], layout);
 }
+
