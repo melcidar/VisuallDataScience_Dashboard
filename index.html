@@ -44,6 +44,17 @@
   <button onclick="setLevel('upper_secondary')">Upper Secondary</button>
   <button onclick="setLevel('tertiary')">Tertiary</button></div>
 
+  <div class="controls">
+  <button onclick="setRegion(null)">All regions</button>
+  <button onclick="setRegion('Europe and Central Asia (WB)')">Europe & Central Asia</button>
+  <button onclick="setRegion('East Asia and Pacific (WB)')">East Asia & Pacific</button>
+  <button onclick="setRegion('Latin America and Caribbean (WB)')">Latin America & Caribbean</button>
+  <button onclick="setRegion('Middle East and North Africa (WB)')">MENA</button>
+  <button onclick="setRegion('North America (WB)')">North America</button>
+  <button onclick="setRegion('South Asia (WB)')">South Asia</button>
+  <button onclick="setRegion('Sub-Saharan Africa (WB)')">Sub-Saharan Africa</button>
+  </div>
+
 
   <div id="chart"></div>
 
@@ -53,32 +64,52 @@
 
     function renderChart(year) {
       const spec = {
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-        "data": { "url": "data.json" },
-        "transform": [
-          { "filter": `datum.year == ${year}` },
-          { "filter": `datum.level == '${selectedLevel}'` }
-        ],
-        "mark": "bar",
-        "encoding": {
-          "x": {
-            "field": "region",
-            "type": "nominal",
-            "title": "World Bank Region",
-            "axis": { "labelAngle": -40 }
-          },
-          "y": {
-            "field": "gender_gap",
-            "type": "quantitative",
-            "title": "Gender gap (male − female)"
-          },
-          "color": {
-            "field": "region",
-            "type": "nominal",
-            "legend": null
-          }
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "data": { "url": "data.json" },
+    
+      "transform": [
+        { "filter": `datum.year == ${year}` },
+        { "filter": `datum.level == '${selectedLevel}'` }
+      ],
+    
+      "mark": "bar",
+    
+      "encoding": {
+        "x": {
+          "field": "region",
+          "type": "nominal",
+          "title": "World Bank Region",
+          "axis": { "labelAngle": -40 }
+        },
+    
+        "y": {
+          "field": "gender_gap",
+          "type": "quantitative",
+          "title": "Gender gap (female − male)"
+        },
+    
+        "color": {
+          "condition": selectedRegion
+            ? {
+                "test": `datum.region == '${selectedRegion}'`,
+                "value": "#1f77b4"
+              }
+            : { "field": "region", "type": "nominal" },
+          "value": "#d3d3d3"
+        },
+    
+        "opacity": {
+          "condition": selectedRegion
+            ? {
+                "test": `datum.region == '${selectedRegion}'`,
+                "value": 1
+              }
+            : { "value": 1 },
+          "value": 0.3
         }
-      };
+      }
+    };
+
 
       vegaEmbed("#chart", spec, { actions: false });
     }
@@ -93,6 +124,13 @@
     selectedLevel = level;
     renderChart(yearSlider.value);
     }
+
+    let selectedRegion = null;
+    function setRegion(region) {
+    selectedRegion = region;
+    renderChart(yearSlider.value);
+    }
+
 
     // initial render
     renderChart(2020);
