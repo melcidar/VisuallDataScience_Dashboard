@@ -81,34 +81,38 @@
           "title": "World Bank Region",
           "axis": { "labelAngle": -40 }
         },
-    
+      
         "y": {
           "field": "gender_gap",
           "type": "quantitative",
           "title": "Gender gap (female − male)"
         },
-    
-        "color": {
-          "condition": selectedRegion
-            ? {
-                "test": `datum.region == '${selectedRegion}'`,
-                "value": "#1f77b4"
+      
+        ...(selectedRegion
+          ? {
+              "color": {
+                "condition": {
+                  "test": `datum.region == '${selectedRegion}'`,
+                  "value": "#1f77b4"
+                },
+                "value": "#d3d3d3"
+              },
+              "opacity": {
+                "condition": {
+                  "test": `datum.region == '${selectedRegion}'`,
+                  "value": 1
+                },
+                "value": 0.3
               }
-            : { "field": "region", "type": "nominal" },
-          "value": "#d3d3d3"
-        },
-    
-        "opacity": {
-          "condition": selectedRegion
-            ? {
-                "test": `datum.region == '${selectedRegion}'`,
-                "value": 1
+            }
+          : {
+              "color": {
+                "field": "region",
+                "type": "nominal",
+                "legend": null
               }
-            : { "value": 1 },
-          "value": 0.3
-        }
+            })
       }
-    };
 
 
       vegaEmbed("#chart", spec, { actions: false });
