@@ -127,58 +127,52 @@ function renderMap(year) {
 
     "data": {
       "url": "https://vega.github.io/vega-datasets/data/world-110m.json",
-      "format": {
-        "type": "topojson",
-        "feature": "countries"
-      }
+      "format": { "type": "topojson", "feature": "countries" }
     },
 
     "transform": [
+      /* normalize country name */
       {
         "calculate": "replace(datum.properties.name, 'United States of America', 'United States')",
-        "as": "country_fixed"
+        "as": "country"
       },
 
       /* country -> WB region */
       {
-        "lookup": "country_fixed",
+        "lookup": "country",
         "from": {
           "data": { "url": "country_to_wb_region_array.json" },
           "key": "country",
           "fields": ["region"]
-        },
-        "as": ["region"]
+        }
       },
 
-      /* region -> gender gap */
+      /* attach education data */
       {
         "lookup": "region",
         "from": {
-          "data": {
-            "url": "data.json",
-            "transform": [
-              { "filter": `datum.year == ${year}` },
-              { "filter": `datum.level == '${selectedLevel}'` },
-              {
-                "aggregate": [
-                  { "op": "mean", "field": "gender_gap", "as": "gender_gap" }
-                ],
-                "groupby": ["region"]
-              }
-            ]
-          },
+          "data": { "url": "data.json" },
           "key": "region",
-          "fields": ["gender_gap"]
+          "fields": ["gender_gap", "year", "level"]
         }
+      },
+
+      /* filter year & level */
+      { "filter": `datum.year == ${year}` },
+      { "filter": `datum.level == '${selectedLevel}'` },
+
+      /* aggregate by region */
+      {
+        "aggregate": [
+          { "op": "mean", "field": "gender_gap", "as": "gender_gap" }
+        ],
+        "groupby": ["region", "properties.name"]
       }
     ],
 
     "projection": { "type": "equalEarth" },
 
-    "mark": {
-      "type": "geoshape",
-      "stroke": "white"
-    },
+    "mark": { "type": "geoshape", "stroke": "white" },
 
     "encoding": {
       "color": {
@@ -193,13 +187,14 @@ function renderMap(year) {
       "tooltip": [
         { "field": "properties.name", "title": "Country" },
         { "field": "region", "title": "WB Region" },
-        { "field": "gender_gap", "title": "Gender gap" }
+        { "field": "gender_gap", "title": "Gender gap", "format": ".2f" }
       ]
     }
   };
 
   vegaEmbed("#map", spec, { actions: false });
 }
+
 
 /* ================= INTERACTION ================= */
 
