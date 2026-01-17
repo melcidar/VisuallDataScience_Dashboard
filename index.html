@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <title>Gender Gap – WB Regions Dashboard</title>
+
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .controls {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    #map, #line {
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
-<div id="map" style="width:100%;height:600px;"></div>
+<h1>Gender Gap in Education – World Bank Regions</h1>
 
-<script>
-const data = [{
-  type: "choropleth",
-  locations: ["AUT", "DEU", "FRA"],
-  z: [-2.1, -1.4, -0.9],
-  text: ["Austria", "Germany", "France"],
-  colorscale: "RdBu",
-  reversescale: true,
-  colorbar: { title: "Gender gap" }
-}];
+<div class="controls">
+  <label>
+    Year:
+    <select id="yearSelect"></select>
+  </label>
 
-const layout = {
-  geo: { projection: { type: "natural earth" } },
-  title: "Gender gap in education"
-};
+  <label>
+    Education level:
+    <select id="levelSelect"></select>
+  </label>
+</div>
 
-Plotly.newPlot("map", data, layout);
-</script>
+<div id="map" style="height: 520px;"></div>
+<div id="line" style="height: 400px;"></div>
 
+<script src="dashboard.js"></script>
 </body>
 </html>
