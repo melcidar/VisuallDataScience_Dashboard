@@ -10,7 +10,7 @@
   <style>
     body {
       font-family: "Inter", Arial, sans-serif;
-      background: #f4f6f9;
+      background: #ced8e4;
       margin: 0;
       padding: 30px;
       color: #2c2c2c;
@@ -26,6 +26,8 @@
     }
 
     /* ---------- HEADER ---------- */
+
+
 .header-row {
   display: grid;
   grid-template-columns: 1.5fr 1fr; /* title | explanation */
@@ -48,7 +50,7 @@
 .legend-text {
   font-size: 13px;
   line-height: 1.4;
-  color: #444;
+  color: #666;
 }
 
 .legend-colors {
@@ -71,7 +73,7 @@
     .panel {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 3px 9px rgba(0,0,0,0.08);
       padding: 12px 14px;   /* tighter vertically */
     }
 
@@ -204,39 +206,70 @@
   color: #666;
 }
 
+.header-panel {
+  padding: 18px 22px;
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.header-right {
+  font-size: 13px;
+  color: #555;
+}
+
+.legend-inline {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.howto {
+  line-height: 1.4;
+}
+
+
   </style>
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <div class="header-row">
-    <div class="header-text">
+<div class="panel header-panel">
+  <div class="header-inner">
+
+    <div class="header-left">
       <h1>Gender Gap in Education – World Bank Regions</h1>
       <p class="subtitle">
-        Interactive dashboard for exploring gender gaps in education across World Bank regions
+        Interactive dashboard for exploring gender gaps in education across World Bank regions.<br>
+        Gender gap is measured as the difference between female and male enrollment rates
+        (percentage points).
       </p>
     </div>
 
-      <div class="legend-panel">
-      <div class="legend-text">
-        <strong>How to read the dashboard</strong><br>
-        Gender gap is measured as the difference between female and male enrollment rates
-        (percentage points). Positive values indicate girls' advantage, negative values
-        indicate boys' advantage.<br>
-        Use slider to select year and buttons to choose education level.<br>
-        Click on a region (bar or map) to highlight it across the views.
-        Colors on the map and selected bars reflect the magnitude of the gender gap.
+    <div class="header-right">
+      <div class="howto">
+        <strong>How to read</strong><br>
+        Positive values → girls’ advantage<br>
+        Negative values → boys’ advantage<br>
+        Click a region to highlight it across views
       </div>
 
-      <div class="legend-colors">
-        <strong>Gender dominance:</strong>
+      <div class="legend-inline">
         <span><span class="dot girls">●</span>Girls dominated</span>
         <span><span class="dot boys">●</span>Boys dominated</span>
       </div>
     </div>
 
   </div>
+</div>
+
+
 
   <!-- YEAR SLIDER -->
   <div class="panel year-panel">
