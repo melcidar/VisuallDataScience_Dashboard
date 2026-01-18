@@ -34,14 +34,15 @@ const REGION_LABELS = {
 };
 
 const REGION_COLORS = {
-  "East Asia and Pacific (WB)": "#1f77b4",
-  "Europe and Central Asia (WB)": "#ff7f0e",
-  "Latin America and Caribbean (WB)": "#2ca02c",
-  "Middle East and North Africa (WB)": "#9467bd",
-  "North America (WB)": "#8c564b",
-  "South Asia (WB)": "#e377c2",
-  "Sub-Saharan Africa (WB)": "#17becf"
+  "East Asia and Pacific (WB)": "#0072B2", // blue
+  "Europe and Central Asia (WB)": "#E69F00", // orange
+  "Latin America and Caribbean (WB)": "#009E73", // bluish green
+  "Middle East and North Africa (WB)": "#CC79A7", // purple
+  "North America (WB)": "#D55E00", // vermillion
+  "South Asia (WB)": "#56B4E9", // sky blue
+  "Sub-Saharan Africa (WB)": "#F0E442" // yellow
 };
+
 
 
 // --------------------------------------------------
@@ -95,9 +96,24 @@ function updateActiveButtons(container, activeBtn) {
   activeBtn.classList.add("active");
 }
 
+const resetBtn = document.getElementById("resetRegionBtn");
+resetBtn.onclick = () => {
+  selectedRegion = null;
+  drawBarCharts();
+  drawLineChart();
+};
+
+
   initLevelButtons();
 }
 
+function updateResetButton() {
+  const btn = document.getElementById("resetRegionBtn");
+  if (!btn) return;
+
+  btn.disabled = !selectedRegion;
+  btn.style.opacity = selectedRegion ? 1 : 0.4;
+}
 
 
 // --------------------------------------------------
@@ -216,7 +232,7 @@ function drawBarCharts() {
     const colors = regions.map(r => {
       if (selectedRegion) {
         return r === selectedRegion
-          ? "#d62728"   // selected region
+          ? "#aa1bd6"   // selected region
           : "#d3d3d3";  // others faded
       }
       return REGION_COLORS[r] || "#2f6df6"; // default distinct color
@@ -288,7 +304,7 @@ function drawLineChart() {
       line: {
         width: isSelected ? 4 : 2,
         color: isSelected
-          ? "#d62728"                     // selected region (red)
+          ? "#aa1bd6"                     // selected region (red)
           : selectedRegion
           ? "#ccc"                        // others faded
           : REGION_COLORS[region] || "#2f6df6" // default distinct color

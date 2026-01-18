@@ -63,7 +63,11 @@
       background: white;
       border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      padding: 15px;
+      padding: 12px 14px;   /* tighter vertically */
+    }
+
+        .panel + .panel {
+      margin-top: 16px;
     }
 
     /* ---------- YEAR SLIDER ---------- */
@@ -98,6 +102,10 @@
       white-space: nowrap;
     }
 
+    .education-panel {
+      margin-bottom: 16px;
+    }
+
     .button-list {
       display: flex;
       gap: 8px;
@@ -127,11 +135,12 @@
     }
 
     /* ---------- MAIN LAYOUT ---------- */
-    .main-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.3fr;
-      gap: 20px;
-    }
+      .main-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        gap: 16px;
+      }
+
 
     /* LEFT: BAR CHARTS */
     .bar-grid {
@@ -151,6 +160,20 @@
       width: 100%;
       height: 400px;
     }
+    .reset-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f6f6f6;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background: #eaeaea;
+}
+
   </style>
 </head>
 
@@ -187,8 +210,13 @@
   <div class="education-row">
     <span class="education-label">Education level:</span>
     <div id="levelButtons" class="button-list"></div>
+
+    <button id="resetRegionBtn" class="reset-btn">
+      Reset region
+    </button>
   </div>
 </div>
+
 
 
   <!-- MAIN CONTENT -->
