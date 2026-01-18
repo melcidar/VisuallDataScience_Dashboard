@@ -4,45 +4,157 @@
   <meta charset="UTF-8" />
   <title>Gender Gap – WB Regions Dashboard</title>
 
+  <!-- Plotly -->
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
+      font-family: "Inter", Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 30px;
+      color: #2c2c2c;
     }
-    .controls {
-      display: flex;
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    /* YEAR SLIDER */
+    .year-panel {
+      background: white;
+      padding: 12px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    /* GRID LAYOUT */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr 220px;
       gap: 20px;
       margin-bottom: 20px;
     }
-    #map, #bar {
-      margin-top: 20px;
+
+    .panel {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      padding: 15px;
     }
+
+    .center-panel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #map {
+      width: 100%;
+      height: 620px;
+    }
+
+    #bar {
+      height: 350px;
+    }
+
+    .left-panel h3,
+    .right-panel h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    /* BUTTON LISTS */
+    .button-list button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #f6f6f6;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+
+    .button-list button:hover {
+      background: #eaeaea;
+    }
+
+    .button-list button.active {
+      background: #2f6df6;
+      color: white;
+      border-color: #2f6df6;
+    }
+
+    .year-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center horizontally */
+}
+
+#yearSlider {
+  width: 70%;            /* make it longer */
+  max-width: 700px;      /* prevent it from being too wide */
+  margin-top: 8px;
+}
+
   </style>
 </head>
 
 <body>
 
-<h1>Gender Gap in Education – World Bank Regions</h1>
+  <h1>Gender Gap in Education – World Bank Regions</h1>
+  <p class="subtitle">
+    Interactive dashboard for exploring gender gaps in education across World Bank regions
+  </p>
 
-<div class="controls">
-  <label>
-    Year:
-    <select id="yearSelect"></select>
-  </label>
-
-  <label>
-    Education level:
-    <select id="levelSelect"></select>
-  </label>
+  <!-- YEAR SLIDER -->
+<div class="year-panel">
+  <div class="year-content">
+    <label>
+      Year: <strong><span id="yearValue"></span></strong>
+    </label>
+    <input type="range" id="yearSlider" />
+  </div>
 </div>
 
-<div style="display: flex; gap: 20px;">
-  <div id="bar" style="width: 35%; height: 500px;"></div>
-  <div id="map" style="width: 65%; height: 500px;"></div>
-</div>
 
-<script src="dashboard.js"></script>
+  <!-- MAIN DASHBOARD -->
+  <div class="dashboard-grid">
+
+    <!-- LEFT: REGIONS -->
+    <div class="panel left-panel">
+      <h3>Region</h3>
+      <div id="regionButtons" class="button-list"></div>
+    </div>
+
+    <!-- CENTER: MAP -->
+    <div class="panel center-panel">
+      <div id="map"></div>
+    </div>
+
+    <!-- RIGHT: EDUCATION LEVELS -->
+    <div class="panel right-panel">
+      <h3>Education level</h3>
+      <div id="levelButtons" class="button-list"></div>
+    </div>
+
+  </div>
+
+  <!-- BAR CHART -->
+  <div class="panel">
+    <div id="bar"></div>
+  </div>
+
+  <!-- LOAD YOUR JS -->
+  <script src="dashboard.js"></script>
+
 </body>
 </html>
