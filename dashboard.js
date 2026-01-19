@@ -74,7 +74,7 @@ function initControls() {
   yearSlider.min = years[0];
   yearSlider.max = years[years.length - 1];
 
-  selectedYear = years.includes(2022) ? 2022 : years[years.length - 1];
+  selectedYear = years.includes(2021) ? 2021 : years[years.length - 1];
   yearSlider.value = selectedYear;
   yearValue.textContent = selectedYear;
 

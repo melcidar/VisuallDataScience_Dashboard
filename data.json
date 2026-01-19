@@ -138,12 +138,6 @@
     "gender_gap": 1.105
   },
   {
-    "region": "East Asia and Pacific (WB)",
-    "year": 2022,
-    "level": "primary",
-    "gender_gap": 0.988
-  },
-  {
     "region": "Europe and Central Asia (WB)",
     "year": 1999,
     "level": "primary",
@@ -280,12 +274,6 @@
     "year": 2021,
     "level": "primary",
     "gender_gap": -0.158
-  },
-  {
-    "region": "Europe and Central Asia (WB)",
-    "year": 2022,
-    "level": "primary",
-    "gender_gap": -0.176
   },
   {
     "region": "Latin America and Caribbean (WB)",
@@ -426,12 +414,6 @@
     "gender_gap": -0.284
   },
   {
-    "region": "Latin America and Caribbean (WB)",
-    "year": 2022,
-    "level": "primary",
-    "gender_gap": -0.61
-  },
-  {
     "region": "Middle East and North Africa (WB)",
     "year": 1999,
     "level": "primary",
@@ -568,12 +550,6 @@
     "year": 2021,
     "level": "primary",
     "gender_gap": 2.292
-  },
-  {
-    "region": "Middle East and North Africa (WB)",
-    "year": 2022,
-    "level": "primary",
-    "gender_gap": 1.155
   },
   {
     "region": "North America (WB)",
@@ -714,12 +690,6 @@
     "gender_gap": 0.191
   },
   {
-    "region": "North America (WB)",
-    "year": 2022,
-    "level": "primary",
-    "gender_gap": -0.306
-  },
-  {
     "region": "South Asia (WB)",
     "year": 1999,
     "level": "primary",
@@ -856,12 +826,6 @@
     "year": 2021,
     "level": "primary",
     "gender_gap": 2.095
-  },
-  {
-    "region": "South Asia (WB)",
-    "year": 2022,
-    "level": "primary",
-    "gender_gap": 2.588
   },
   {
     "region": "Sub-Saharan Africa (WB)",
@@ -1140,12 +1104,6 @@
     "gender_gap": -0.837
   },
   {
-    "region": "East Asia and Pacific (WB)",
-    "year": 2022,
-    "level": "lower_secondary",
-    "gender_gap": -0.858
-  },
-  {
     "region": "Europe and Central Asia (WB)",
     "year": 1999,
     "level": "lower_secondary",
@@ -1282,12 +1240,6 @@
     "year": 2021,
     "level": "lower_secondary",
     "gender_gap": 0.055
-  },
-  {
-    "region": "Europe and Central Asia (WB)",
-    "year": 2022,
-    "level": "lower_secondary",
-    "gender_gap": 0.248
   },
   {
     "region": "Latin America and Caribbean (WB)",
@@ -1428,12 +1380,6 @@
     "gender_gap": -1.109
   },
   {
-    "region": "Latin America and Caribbean (WB)",
-    "year": 2022,
-    "level": "lower_secondary",
-    "gender_gap": -1.815
-  },
-  {
     "region": "Middle East and North Africa (WB)",
     "year": 1999,
     "level": "lower_secondary",
@@ -1570,12 +1516,6 @@
     "year": 2021,
     "level": "lower_secondary",
     "gender_gap": 3.524
-  },
-  {
-    "region": "Middle East and North Africa (WB)",
-    "year": 2022,
-    "level": "lower_secondary",
-    "gender_gap": 3.368
   },
   {
     "region": "North America (WB)",
@@ -1716,12 +1656,6 @@
     "gender_gap": -2.04
   },
   {
-    "region": "North America (WB)",
-    "year": 2022,
-    "level": "lower_secondary",
-    "gender_gap": -0.751
-  },
-  {
     "region": "South Asia (WB)",
     "year": 1999,
     "level": "lower_secondary",
@@ -1858,12 +1792,6 @@
     "year": 2021,
     "level": "lower_secondary",
     "gender_gap": -0.776
-  },
-  {
-    "region": "South Asia (WB)",
-    "year": 2022,
-    "level": "lower_secondary",
-    "gender_gap": -0.652
   },
   {
     "region": "Sub-Saharan Africa (WB)",
@@ -2136,12 +2064,6 @@
     "gender_gap": -1.558
   },
   {
-    "region": "East Asia and Pacific (WB)",
-    "year": 2022,
-    "level": "upper_secondary",
-    "gender_gap": -1.428
-  },
-  {
     "region": "Europe and Central Asia (WB)",
     "year": 1999,
     "level": "upper_secondary",
@@ -2278,12 +2200,6 @@
     "year": 2021,
     "level": "upper_secondary",
     "gender_gap": -0.331
-  },
-  {
-    "region": "Europe and Central Asia (WB)",
-    "year": 2022,
-    "level": "upper_secondary",
-    "gender_gap": -0.069
   },
   {
     "region": "Latin America and Caribbean (WB)",
@@ -2424,12 +2340,6 @@
     "gender_gap": -3.998
   },
   {
-    "region": "Latin America and Caribbean (WB)",
-    "year": 2022,
-    "level": "upper_secondary",
-    "gender_gap": -3.644
-  },
-  {
     "region": "Middle East and North Africa (WB)",
     "year": 1999,
     "level": "upper_secondary",
@@ -2566,12 +2476,6 @@
     "year": 2021,
     "level": "upper_secondary",
     "gender_gap": 3.208
-  },
-  {
-    "region": "Middle East and North Africa (WB)",
-    "year": 2022,
-    "level": "upper_secondary",
-    "gender_gap": 3.145
   },
   {
     "region": "North America (WB)",
@@ -2712,12 +2616,6 @@
     "gender_gap": -1.28
   },
   {
-    "region": "North America (WB)",
-    "year": 2022,
-    "level": "upper_secondary",
-    "gender_gap": -2.577
-  },
-  {
     "region": "South Asia (WB)",
     "year": 1999,
     "level": "upper_secondary",
@@ -2854,12 +2752,6 @@
     "year": 2021,
     "level": "upper_secondary",
     "gender_gap": 1.681
-  },
-  {
-    "region": "South Asia (WB)",
-    "year": 2022,
-    "level": "upper_secondary",
-    "gender_gap": 1.281
   },
   {
     "region": "Sub-Saharan Africa (WB)",
@@ -3132,12 +3024,6 @@
     "gender_gap": -8.691
   },
   {
-    "region": "East Asia and Pacific (WB)",
-    "year": 2022,
-    "level": "tertiary",
-    "gender_gap": -8.456
-  },
-  {
     "region": "Europe and Central Asia (WB)",
     "year": 1999,
     "level": "tertiary",
@@ -3274,12 +3160,6 @@
     "year": 2021,
     "level": "tertiary",
     "gender_gap": -13.521
-  },
-  {
-    "region": "Europe and Central Asia (WB)",
-    "year": 2022,
-    "level": "tertiary",
-    "gender_gap": -13.607
   },
   {
     "region": "Latin America and Caribbean (WB)",
@@ -3420,12 +3300,6 @@
     "gender_gap": -18.446
   },
   {
-    "region": "Latin America and Caribbean (WB)",
-    "year": 2022,
-    "level": "tertiary",
-    "gender_gap": -18.188
-  },
-  {
     "region": "Middle East and North Africa (WB)",
     "year": 1999,
     "level": "tertiary",
@@ -3562,12 +3436,6 @@
     "year": 2021,
     "level": "tertiary",
     "gender_gap": -3.193
-  },
-  {
-    "region": "Middle East and North Africa (WB)",
-    "year": 2022,
-    "level": "tertiary",
-    "gender_gap": -3.483
   },
   {
     "region": "North America (WB)",
@@ -3708,12 +3576,6 @@
     "gender_gap": -32.276
   },
   {
-    "region": "North America (WB)",
-    "year": 2022,
-    "level": "tertiary",
-    "gender_gap": -32.082
-  },
-  {
     "region": "South Asia (WB)",
     "year": 1999,
     "level": "tertiary",
@@ -3850,12 +3712,6 @@
     "year": 2021,
     "level": "tertiary",
     "gender_gap": -0.881
-  },
-  {
-    "region": "South Asia (WB)",
-    "year": 2022,
-    "level": "tertiary",
-    "gender_gap": -0.224
   },
   {
     "region": "Sub-Saharan Africa (WB)",
