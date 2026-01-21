@@ -20,12 +20,12 @@ Promise.all([
   countryRegionMap = cMap;
 
   initControls();
-
   updateDashboard();
 });
 
-
-
+// --------------------------------------------------
+// CONSTANTS
+// --------------------------------------------------
 const REGION_LABELS = {
   "East Asia and Pacific (WB)": "EAP",
   "Europe and Central Asia (WB)": "ECA",
@@ -36,41 +36,26 @@ const REGION_LABELS = {
   "Sub-Saharan Africa (WB)": "SSA"
 };
 
+// Okabe–Ito inspired, color-blind safe
 const REGION_COLORS = {
-  "East Asia and Pacific (WB)": "#0082ce", // blue
-  "Europe and Central Asia (WB)": "#e59c00", // orange
-  "Latin America and Caribbean (WB)": "#004e39", // bluish green
-  "Middle East and North Africa (WB)": "#6b505f", // purple
-  "North America (WB)": "#D55E00", // vermillion
-  "South Asia (WB)": "#56B4E9", // sky blue
-  "Sub-Saharan Africa (WB)": "#666226" // yellow
+  "East Asia and Pacific (WB)": "#0072B2",
+  "Europe and Central Asia (WB)": "#E69F00",
+  "Latin America and Caribbean (WB)": "#009E73",
+  "Middle East and North Africa (WB)": "#CC79A7",
+  "North America (WB)": "#D55E00",
+  "South Asia (WB)": "#56B4E9",
+  "Sub-Saharan Africa (WB)": "#000000"
 };
 
-const MAP_COLORSCALE = [
-  [0, "#67001f"],
-  [0.5, "#f7f7f7"],
-  [1, "#053061"]
-];
+const DEFAULT_BAR_COLOR = "#b7b7b7";
+const FADED_OPACITY = 0.35;
 
 const LEVEL_LABELS = {
-  "Primary": "Primary education",
-  "Lower secondary": "Lower secondary education",
-  "Upper secondary": "Upper secondary education",
-  "Tertiary": "Tertiary education"
+  "primary": "Primary education",
+  "lower_secondary": "Lower secondary education",
+  "upper_secondary": "Upper secondary education",
+  "tertiary": "Tertiary education"
 };
-
-
-const POSITIVE_COLOR = "#d62035"; // crvena (RdBu pozitivna strana)
-const NEGATIVE_COLOR = "#2166ac"; // plava (RdBu negativna strana)
-const FADED_COLOR = "#7c7c7c";
-
-const MAP_MIN = -10;
-const MAP_MAX = 10;
-
-function valueToColor(value) {
-  const t = (value - MAP_MIN) / (MAP_MAX - MAP_MIN); // normalize 0–1
-  return Plotly.colorscale.getColor("RdBu", t);
-}
 
 
 // --------------------------------------------------
@@ -82,7 +67,6 @@ function initControls() {
   const yearSlider = document.getElementById("yearSlider");
   const yearValue = document.getElementById("yearValue");
 
-  // --- YEAR SLIDER ---
   yearSlider.min = years[0];
   yearSlider.max = years[years.length - 1];
 
@@ -95,7 +79,9 @@ function initControls() {
     yearValue.textContent = selectedYear;
     updateDashboard();
   };
-  
+
+  initLevelButtons();
+}
 
 function initLevelButtons() {
   const levels = [...new Set(genderData.map(d => d.level))];
@@ -124,25 +110,10 @@ function updateActiveButtons(container, activeBtn) {
   activeBtn.classList.add("active");
 }
 
-const resetBtn = document.getElementById("resetRegionBtn");
-resetBtn.onclick = () => {
+document.getElementById("resetRegionBtn").onclick = () => {
   selectedRegion = null;
-  drawBarCharts();
-  drawLineChart();
+  updateDashboard();
 };
-
-
-  initLevelButtons();
-}
-
-function updateResetButton() {
-  const btn = document.getElementById("resetRegionBtn");
-  if (!btn) return;
-
-  btn.disabled = !selectedRegion;
-  btn.style.opacity = selectedRegion ? 1 : 0.4;
-}
-
 
 // --------------------------------------------------
 // DASHBOARD UPDATE
@@ -159,7 +130,7 @@ function updateDashboard() {
 }
 
 // --------------------------------------------------
-// MAP
+// MAP (Cividis – color-blind safe)
 // --------------------------------------------------
 function drawMap(filteredData) {
   const regionValue = {};
@@ -172,13 +143,10 @@ function drawMap(filteredData) {
   const hover = [];
 
   countryRegionMap.forEach(d => {
-    const val = regionValue[d.region];
-    if (val !== undefined) {
+    if (regionValue[d.region] !== undefined) {
       countries.push(d.country);
-      values.push(val);
-      hover.push(
-        `<b>${d.region}</b><br>Gender gap: ${val}`
-      );
+      values.push(regionValue[d.region]);
+      hover.push(`<b>${d.region}</b><br>Gender gap: ${regionValue[d.region]}`);
     }
   });
 
@@ -187,52 +155,35 @@ function drawMap(filteredData) {
     locations: countries,
     locationmode: "country names",
     z: values,
-    text: hover,
-    colorscale: "RdBu",
-    zmid: 0,
+    colorscale: "Cividis",
     zmin: -10,
     zmax: 10,
+    text: hover,
+    hovertemplate: "%{text}<extra></extra>",
     colorbar: {
-      title: {
-        text: "Gender gap",
-        side: "top"
-      },
+      title: "Gender gap",
       orientation: "h",
       x: 0.5,
       xanchor: "center",
       y: -0.25,
-      len: 0.6,
-      thickness: 12
-    },
-    hovertemplate: "%{text}<extra></extra>"
+      len: 0.6
+    }
   };
 
-
-const layout = {
-  margin: {
-    t: 0,
-    b: 0,
-    l: 0,
-    r: 0
-  },
-  geo: {
-    projection: { type: "equirectangular" }
-  }
-};
-
-  Plotly.newPlot("map", [trace], layout);
+  Plotly.newPlot("map", [trace], {
+    margin: { t: 0, b: 0, l: 0, r: 0 },
+    geo: { projection: { type: "equirectangular" } }
+  });
 
   document.getElementById("map").on("plotly_click", e => {
     const country = e.points[0].location;
-    const region = countryRegionMap.find(d => d.country === country)?.region;
-    selectedRegion = region;
-    drawBarCharts();
-    drawLineChart();
+    selectedRegion = countryRegionMap.find(d => d.country === country)?.region;
+    updateDashboard();
   });
 }
 
 // --------------------------------------------------
-// LINE CHART
+// BAR CHARTS (grey + highlight)
 // --------------------------------------------------
 function drawBarCharts() {
   const levels = [...new Set(genderData.map(d => d.level))];
@@ -254,32 +205,20 @@ function drawBarCharts() {
     );
 
     const regions = data.map(d => d.region);
-    const regionLabels = regions.map(r => REGION_LABELS[r] ?? r);
     const values = data.map(d => d.gender_gap);
 
-    // ---------- marker logic ----------
-    let marker;
-
-if (selectedRegion) {
-  marker = {
-    color: regions.map((r, i) => {
-      if (r !== selectedRegion) return FADED_COLOR;
-      return values[i] >= 0 ? POSITIVE_COLOR : NEGATIVE_COLOR;
-    }),
-    opacity: regions.map(r => (r === selectedRegion ? 1 : 0.4))
-  };
-} else {
-  marker = {
-    color: regions.map(r =>
-      REGION_COLORS[r] || "#2f6df6"
-    )
-  };
-}
-
+    const marker = selectedRegion
+      ? {
+          color: regions.map(r =>
+            r === selectedRegion ? REGION_COLORS[r] : DEFAULT_BAR_COLOR
+          ),
+          opacity: regions.map(r => (r === selectedRegion ? 1 : FADED_OPACITY))
+        }
+      : { color: DEFAULT_BAR_COLOR };
 
     const trace = {
       type: "bar",
-      x: regionLabels,
+      x: regions.map(r => REGION_LABELS[r]),
       y: values,
       customdata: regions,
       marker: marker,
@@ -287,46 +226,24 @@ if (selectedRegion) {
         "<b>%{customdata}</b><br>Gender gap: %{y}<extra></extra>"
     };
 
-    const layout = {
+    Plotly.newPlot(div, [trace], {
       title: level,
       margin: { l: 40, r: 20, t: 40, b: 80 },
-      xaxis: {
-        title: "World Bank regions",
-        tickangle: -75
-      },
-      yaxis: {
-        title: "Gender gap",
-        range: [-10, 10],
-        zeroline: true
-      }
-    };
-
-    Plotly.newPlot(div, [trace], layout, {
-      displayModeBar: false,
-      responsive: true
-    });
+      xaxis: { tickangle: -75 },
+      yaxis: { title: "Gender gap", range: [-10, 10], zeroline: true }
+    }, { displayModeBar: false });
 
     div.on("plotly_click", e => {
-  if (!e.points || !e.points.length) return;
-
-  selectedRegion = e.points[0].customdata;
-
-  // 🔴 KLJUČNO: ovaj bar chart = ovaj education level
-  selectedLevel = level;
-
-  // update active level button (UI sync)
-  const buttons = document.querySelectorAll("#levelButtons button");
-  buttons.forEach(b => {
-    b.classList.toggle("active", b.textContent === level);
-  });
-
-  // 🔁 refresh EVERYTHING (map + bars + line)
-  updateDashboard();
-});
-
+      selectedRegion = e.points[0].customdata;
+      selectedLevel = level;
+      updateDashboard();
+    });
   });
 }
 
+// --------------------------------------------------
+// LINE CHART (DETAIL VIEW – ONE REGION)
+// --------------------------------------------------
 function drawLineChart() {
   const container = document.getElementById("lineChart");
 
@@ -348,40 +265,39 @@ function drawLineChart() {
   }
 
   const regionData = genderData
-    .filter(d =>
-      d.level === selectedLevel &&
-      d.region === selectedRegion
-    )
+    .filter(d => d.level === selectedLevel && d.region === selectedRegion)
     .sort((a, b) => a.year - b.year);
 
-  const trace = {
-    type: "scatter",
-    mode: "lines+markers",
-    x: regionData.map(d => d.year),
-    y: regionData.map(d => d.gender_gap),
-    line: {
-      color: REGION_COLORS[selectedRegion],
-      width: 3
-    },
-    marker: { size: 6 },
-    name: REGION_LABELS[selectedRegion]
-  };
+Plotly.newPlot(container, [{
+  type: "scatter",
+  mode: "lines+markers",
+  x: regionData.map(d => d.year),
+  y: regionData.map(d => d.gender_gap),
+  line: { color: REGION_COLORS[selectedRegion], width: 3 },
+  marker: { size: 6 }
+}], {
+  margin: { l: 50, r: 20, t: 70, b: 40 },
 
-  const layout = {
-    margin: { l: 50, r: 20, t: 40, b: 40 },
-    xaxis: {
-      title: "Year",
-      tickmode: "linear"
-    },
-    yaxis: {
-      title: "Gender gap",
-      zeroline: true
-    },
-    showlegend: false
-  };
+  xaxis: { title: "Year" },
+  yaxis: { title: "Gender gap", zeroline: true },
 
-  Plotly.newPlot(container, [trace], layout, {
-    displayModeBar: false,
-    responsive: true
-  });
+  showlegend: false,
+
+  annotations: [
+    {
+      text: `<b>Region:</b> ${REGION_LABELS[selectedRegion]} &nbsp;&nbsp; <b>Education level:</b> ${LEVEL_LABELS[selectedLevel]}`,
+      x: 0.5,
+      y: 1.18,
+      xref: "paper",
+      yref: "paper",
+      showarrow: false,
+      align: "center",
+      font: {
+        size: 13,
+        color: "#333"
+      }
+    }
+  ]
+}, { displayModeBar: false });
+
 }
