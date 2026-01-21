@@ -330,89 +330,58 @@ if (selectedRegion) {
 function drawLineChart() {
   const container = document.getElementById("lineChart");
 
-  const data = genderData.filter(d =>
-    d.level === selectedLevel
-  );
+  if (!selectedRegion) {
+    Plotly.newPlot(container, [], {
+      annotations: [{
+        text: "Click a region in the bar chart or map to see its trend over time.",
+        x: 0.5,
+        y: 0.5,
+        xref: "paper",
+        yref: "paper",
+        showarrow: false,
+        font: { size: 14 }
+      }],
+      xaxis: { visible: false },
+      yaxis: { visible: false }
+    });
+    return;
+  }
 
-  const regions = [...new Set(data.map(d => d.region))];
+  const regionData = genderData
+    .filter(d =>
+      d.level === selectedLevel &&
+      d.region === selectedRegion
+    )
+    .sort((a, b) => a.year - b.year);
 
-  const traces = regions.map(region => {
-    const regionData = data
-      .filter(d => d.region === region)
-      .sort((a, b) => a.year - b.year);
-
-    const isSelected = selectedRegion === region;
-
-    return {
-      type: "scatter",
-      mode: "lines+markers",
-      name: REGION_LABELS[region] ?? region,
-      customdata: region,
-
-      x: regionData.map(d => d.year),
-      y: regionData.map(d => d.gender_gap),
-
-      line: {
-        color: REGION_COLORS[region] || "#2f6df6",
-        width: isSelected ? 4 : 2
-      },
-
-      marker: {
-        size: isSelected ? 7 : 5
-      },
-
-      opacity: selectedRegion && !isSelected ? 0.3 : 1
-    };
-  });
+  const trace = {
+    type: "scatter",
+    mode: "lines+markers",
+    x: regionData.map(d => d.year),
+    y: regionData.map(d => d.gender_gap),
+    line: {
+      color: REGION_COLORS[selectedRegion],
+      width: 3
+    },
+    marker: { size: 6 },
+    name: REGION_LABELS[selectedRegion]
+  };
 
   const layout = {
-  margin: { l: 50, r: 20, t: 60, b: 40 },
+    margin: { l: 50, r: 20, t: 40, b: 40 },
+    xaxis: {
+      title: "Year",
+      tickmode: "linear"
+    },
+    yaxis: {
+      title: "Gender gap",
+      zeroline: true
+    },
+    showlegend: false
+  };
 
-  xaxis: {
-    title: "Year",
-    tickmode: "linear"
-  },
-
-  yaxis: {
-    title: "Gender gap",
-    range: [-20, 35],
-    zeroline: true
-  },
-
-  showlegend: true,
-
-  legend: {
-    orientation: "h",
-    y: -0.3
-  },
-
-  annotations: [
-    {
-      text: `Education level: <b>${LEVEL_LABELS[selectedLevel] ?? selectedLevel}</b>`,
-      x: 0.5,
-      y: 1.15,
-      xref: "paper",
-      yref: "paper",
-      showarrow: false,
-      font: {
-        size: 13,
-        color: "#444"
-      }
-    }
-  ]
-};
-
-
-  Plotly.newPlot(container, traces, layout, {
+  Plotly.newPlot(container, [trace], layout, {
     displayModeBar: false,
-    responsive: false
-  });
-
-  container.on("plotly_click", e => {
-    if (!e.points || !e.points.length) return;
-
-    selectedRegion = e.points[0].customdata;
-    drawBarCharts();
-    drawLineChart();
+    responsive: true
   });
 }
