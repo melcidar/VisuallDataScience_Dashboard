@@ -57,6 +57,13 @@ const LEVEL_LABELS = {
   "tertiary": "Tertiary education"
 };
 
+function syncLevelButtons() {
+  const buttons = document.querySelectorAll("#levelButtons button");
+  buttons.forEach(b => {
+    b.classList.toggle("active", b.textContent === selectedLevel);
+  });
+}
+
 
 // --------------------------------------------------
 // CONTROLS
@@ -179,6 +186,7 @@ function drawMap(filteredData) {
     const country = e.points[0].location;
     selectedRegion = countryRegionMap.find(d => d.country === country)?.region;
     updateDashboard();
+    syncLevelButtons();
   });
 }
 
@@ -237,6 +245,7 @@ function drawBarCharts() {
       selectedRegion = e.points[0].customdata;
       selectedLevel = level;
       updateDashboard();
+      syncLevelButtons();
     });
   });
 }
